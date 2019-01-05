@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>from</title>
+</head>
+<body>
+    <from>
+        <div class="username">
+            <label for="inputname">姓名</label>
+            <input type="text" id="inputname" placeholder="用户名">
+        </div>
+        <div class="password">
+            <laber for="inputpass">密码</laber>
+            <input type="password" id="inputpass" value="12345678">
+        </div>
+        <div class="sex">
+            <label for="">性别：</label>
+            <input type="radio" value="man" name="sex">男
+            <!-- type value name 3才 name=可以是汉字吗？ -->
+            <input type="radio" value="woman" name="sex">女
+        </div>
+        <div class="quxiang">
+            <label for="">取向：</label>
+            <input type="radio" name="quxiang" value="man">男
+            <!-- radio -->
+            <input type="radio" name="quxiang" value="woman">女
+        </div>
+        <div class="hobby">
+            <label for="">爱好：</label>
+            <input type="checkbox" value="dota" name="hobby" id="do">
+            <label for="do">dota</label>
+            <input type="checkbox" value="luyou" name="hobby" id="tr">
+            <label for="tr">旅游</label>
+            <input type="checkbox" value="chongwu" name="hobby" id="an">
+            <label for="an">宠物</label>
+        </div>
+        <div class="textarea">
+            <label for="pinglun">评论：</label>
+            <textarea id="pinglun" name="pinglun" placehoder="ddd"></textarea>
+        </div>
+        <div class="selectc">
+            <label for="selectcar">我的car：</label>
+            <select name="car" id="selectcar">
+                <option value="sihuan">奥迪</option>
+                <option value="sabo" selected>萨博</option>
+                <option value="ma">宝马</option>
+            </select>
+            <input type="submit">
+        </div>
+    </from>        
+</body>
+</html>
