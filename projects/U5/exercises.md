@@ -26,7 +26,7 @@ CSRF我的理解就是，有人在用户不知情的情况下，使用网站存�
 1. 他不会被用户看见
 2. 用来防范CSRF攻击，如果服务器端没有收到 这里的键：值，那么很有可能受到了CSRF攻击。
 # 7. 实现如下表单,附上预览地址。其中性别和取向是单选，爱好是多选
-https://comicparty.github.io/resume/projects/U5/exercise7.html
+[github Pages](https://comicparty.github.io/resume/projects/U5/exercise7.html)
 # 8. label 有什么作用？如何使用？
 主要是实现 文字与选框绑定，如下代码：
 
