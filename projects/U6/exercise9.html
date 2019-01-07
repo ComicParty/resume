@@ -11,28 +11,41 @@
     .box:first-child {
         color: red;
     }
-
+    /*.box的 父元素的 第一个类名为.box的子元素*/
     .box:first-of-type {
         background: blue;
     }
-
+    /*匹配 .box的 父元素的 类名为.box的 不同标签类型的子元素*/
     .box :first-child {
         font-size: 30px;
     }
-
+    /*  .box的所有后代元素 :first-child 第一个子元素 */
     .box :first-of-type {
         font-weight: bold;
     }
+    /*.box的所有后代元素 :first-of-type每种元素类型的 头一个*/
     </style>
     <div class="container">
-        <div class="box">div.box</div>
-        <p class="box">p.box</p>
-        <div class="box">div.box</div>
-        <div class="box">
-            <div class="item">div.item</div>
-            <p class="item">p.item</p>
+        <div class="box"> <!-- .box:first-child 父元素中 第一个类名为box的元素--> <!-- .box:first-of-type 父元素中 第一个标签为div的 拥有.box的元素-->
+            div.box
         </div>
-        <p class="box"></p>
+        <p class="box"> <!-- .box:first-of-type 父元素中 第一个标签为p的 拥有.box的元素-->
+            p.box
+        </p>
+        <div class="box">
+            div.box
+        </div>
+        <div class="box"> <!-- 只有这个 .box 拥有子/后代元素 -->
+            <div class="item">  <!-- .box :first-child 第一个子元素 --><!-- :first-of-type 第一个出现的div类型 -->
+                div.item 
+            </div>
+            <p class="item"><!-- :first-of-type 第一个出现p的类型 -->
+                p.item
+            </p>
+        </div>
+        <p class="box">
+            
+        </p>
     </div>
 </body>
 
