@@ -1,0 +1,49 @@
+#header{
+} 
+/*选择 id 为header的元素*/
+.header{
+}
+/*选择 类名 为header的元素*/
+.header .logo{
+}
+/*选择 类名 为header的元素 的所有 类名为logo的后代元素*/
+/*这里的后代元素指 儿子、孙子等等*/
+.header.mobile{
+}
+/*选择 同时有header和mobile类名的元素*/
+.header p, .header h3{
+}
+/*
+选择 类名为header元素的 后代元素p  和 类名为header的元素的 后代元素h3
+*/
+#header a:hover{
+}
+/*选择id为header元素的所有后代 a元素，为他添加一个伪类，当鼠标悬浮在上面时触发*/
+#header .logo~p{
+}
+/*选择id为header元素的所有后代元素，这个后代元素是 类名为logo元素的 后面同级 元素p */
+#header .logo+p{
+}
+/*选择id为header元素的所有后代元素，这个后代元素是 类名为logo元素的相邻元素p */
+#header .logo p{
+}
+/*选择id为header元素的所有类名为logo的后代，再找类名为logo元素的 标签为p的后代*/
+#header .logo>p{
+}
+/*选择id为header元素的所有类名为logo的后代，再找类名为logo元素的 子元素p*/
+#header p.logo{
+}
+/*上面描述太混乱了，我不知道老师能不能读懂？老师能不能说一下自己是怎么读的？
+其实机器和人的阅读方式不同，资料显示是从右往左读的，所以从现在开始，我按照机器翻译。
+找到p元素，且类名为logo，他的父元素id为header 
+*/
+#header .logo.p{
+}
+/*
+找到类名同时为logo、p的元素，他的父元素id为header
+*/
+#header input[checked]{
+}
+/*
+找到属性为checked的input元素，他的父元素id为header
+*/
