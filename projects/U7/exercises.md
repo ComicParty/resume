@@ -4,8 +4,11 @@
 4. 单行文本溢出加 ...如何实现?
 5. px, em, rem,vw 有什么区别
 6. 解释下面代码的作用? 字体里\5b8b\4f53代表什么?
-7. 解释下面代码的作用? 字体里\5b8b\4f53代表什么?
+7. 实现如下效果
 8. 实现如下效果
+![](https://raw.githubusercontent.com/ComicParty/resume/master/projects/U7/images/ex8.jpg)
 9. 实现如下两个表格效果
+![](https://comicparty.github.io/resume/projects/U7/images/ex9.jpg)
+
 10. 实现如下三角形
 
