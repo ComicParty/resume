@@ -4,17 +4,17 @@
 不会被 继承 的属性：border,padding,margin,background-image
 
 # 2. 块级元素和行内元素分别有哪些？
-bolck level会默认换行显示,inline level只显示它本身的宽度
-block level 可以设置 上、右、下、左的margin,padding属性；
-inline level它的margin属性设置上、下是不生效的，只有左右生效，
+1.bolck level会默认换行显示
+  inline level只显示它本身的宽度
+2.block level 可以设置 上、右、下、左的margin,padding属性；
+  inline level它的margin属性设置上、下是不生效的，只有左右生效，
 <p align="center">
     <img src="https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex2spanMargin.jpg" alt="Sample"  width="363" height="277">
     <p align="center">
         <em>行内元素span的 margin设置效果</em>
     </p>
 </p>
-
-padding设置宽高后，上、下、左、右视觉上可以看到，但是只有padding-right,padding-left会改变它本身的大小和影响其它元素的位置， padding-top,padding-bottom只有显示效果，无实质影响。
+inline level的padding设置宽高后，上、下、左、右视觉上可以看到，但是只有padding-right,padding-left会改变它本身的大小和影响其它元素的位置， padding-top,padding-bottom只有显示效果，无实质影响。
 <p align="center">
     <img src="https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex2spanPadding.jpg" alt="Sample"  width="363" height="277">
     <p align="center">
@@ -22,7 +22,7 @@ padding设置宽高后，上、下、左、右视觉上可以看到，但是只�
     </p>
 </p>
 
-    3:block level可以包含 block level和inline level，而inline level只能包含数据和其它行内元素。
+3.block level可以包含 block level和inline level，而inline level只能包含数据和其它行内元素。
 # 3. 如何让块级元素水平居中？如何让行内元素水平居中?如何让 inline-block 元素水平居中？
 # 4. 单行文本溢出加 ...如何实现?
 # 5. px, em, rem,vw 有什么区别
