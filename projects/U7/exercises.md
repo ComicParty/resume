@@ -4,9 +4,9 @@
 不会被 继承 的属性：border,padding,margin,background-image
 
 # 2. 块级元素和行内元素分别有哪些？
-区别1:bolck level会默认换行显示,inline level只显示它本身的宽度
-    2:block level 可以设置 上、右、下、左的margin,padding属性；
-      inline level它的margin属性设置上、下是不生效的，只有左右生效，
+    1.bolck level会默认换行显示,inline level只显示它本身的宽度
+    2.1block level 可以设置 上、右、下、左的margin,padding属性；
+    2.2inline level它的margin属性设置上、下是不生效的，只有左右生效，
                     padding设置宽高后，上、下、左、右视觉上可以看到，但是只有padding-right,padding-left会改变它本身的大小和影响其它元素的位置， padding-top,padding-bottom只有显示效果，无实质影响。
 <p align="center">
     <img src="https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex2spanPadding.jpg" alt="Sample"  width="363" height="277">
