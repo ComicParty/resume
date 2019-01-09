@@ -1,4 +1,4 @@
-1.  什么是 CSS 继承?哪些属性能继承，哪些不能？
+#1.  什么是 CSS 继承?哪些属性能继承，哪些不能？
 答：CSS继承就是 在父元素中进行的一些CSS样式设置，它的子元素会默认进行同样的设置，这就是CSS继承。每个CSS 属性定义的概述都指出了这个属性是默认继承的("Inherited: Yes") 还是默认不继承的("Inherited: no")。
 会被继承的属性：color,font-size
 不会被 继承 的属性：border,padding,margin,background-image
@@ -13,15 +13,8 @@
         <em>行内元素span的 padding设置效果</em>
     </p>
 </p>
-<p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex2spanMargin.jpg" alt="Sample"  width="363" height="277">
-    <p align="center">
-        <em>行内元素span的 margin设置效果</em>
-    </p>
-</p>
-![不设置尺寸的显示效果](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex2spanMargin.jpg)
-![设置github markdown 图片大小的 方法来源](https://blog.csdn.net/lovechris00/article/details/82379382)
-      3:block level可以包含 block level和inline level，而inline level只能包含数据和其它行内元素。
+
+    3:block level可以包含 block level和inline level，而inline level只能包含数据和其它行内元素。
 3. 如何让块级元素水平居中？如何让行内元素水平居中?如何让 inline-block 元素水平居中？
 4. 单行文本溢出加 ...如何实现?
 5. px, em, rem,vw 有什么区别
