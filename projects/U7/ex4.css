@@ -1,0 +1,19 @@
+div{
+    width: 300px;
+    border: solid red 1px;
+}
+img{
+    width: 300px;
+}
+h1,p{
+    padding: 0 10px;
+}
+h1{
+    /*注意顺序*/
+    white-space: nowrap;
+    /*不换行*/
+    overflow: hidden;
+    /*文本举出之后隐藏*/
+    text-overflow: ellipsis;
+    /*文本溢出之后变成 ...*/
+}

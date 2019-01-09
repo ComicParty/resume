@@ -1,0 +1,49 @@
+/*.div 如何让块级元素水平居中？*/
+.div1{
+    border: solid blue 1px;
+    margin-bottom: 5px;
+}
+.div1 p:nth-last-of-type(2){
+    background-color: lime;
+}
+.div1 p:last-child{
+    color: lime;
+    width: 300px; /*block level 默认占据整行,不设置宽度无法看到 居中效果*/
+    background-color: black;
+    margin: 0 auto;
+}
+
+/*.div0 如何让行内元素水平居中?*/
+.div2{
+    border: solid red 1px;
+    margin-bottom: 5px;
+}
+.textalign{  
+    text-align: center;
+}
+/*如何让 inline-block 元素水平居中？*/
+.div3{
+    border: solid lime 1px;
+}
+
+.inlineBlockDiv1{ 
+    text-align: center;
+}
+.inlineBlockDiv1P1{
+    background-color: #999;
+    display: inline-block;
+}
+
+/*来源 https://juejin.im/post/582c04032f301e00594327d4*/
+.inlineBlockDiv2{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 550px;
+    height: 120px;
+    background: lime;
+}
+.inlineBlockSpan1{
+    display: inline-block;
+    vertical-align: middle;
+}

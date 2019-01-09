@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>block level 居中</title>
+    <style>
+    @import url(./ex3.css);
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <span>如何让块级元素水平居中？</span>
+        <p>我是原味</p>
+        <p>我是居中的</p>
+    </div>
+    <div class="div2">
+        <span>如何让行内元素水平居中?</span>
+        <p class="textalign">
+            <span>爸爸用text-align让我居中</span>
+        </p>
+    </div>
+    <div class="div3">
+        <span>如何让 inline-block 元素水平居中？</span>
+        <div class="inlineBlockDiv1">
+            <p class="inlineBlockDiv1P1">
+                P元素display: inline-block;
+                父元素text-align: center;
+                居中成功
+            </p>
+        </div>
+        <div class="inlineBlockDiv2">
+            <!-- 利用display:table-cell属性使内容垂直居中,这个方法在多行文字居中的时候用的比较多; -->
+            <span class="inlineBlockSpan1">多行文字，此处居中设置</span>
+        </div>
+    </div>
+</body>
+
+</html>
