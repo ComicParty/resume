@@ -24,6 +24,7 @@ inline level的padding属性设置后，上、下、左、右视觉上可以看�
         [github 设置 markdown图片大小 教程](https://blog.csdn.net/lovechris00/article/details/82379382)
 3.block level可以包含 block level和inline level，
 而inline level只能包含数据和其它行内元素。
+
 # 3. 如何让块级元素水平居中？如何让行内元素水平居中?如何让 inline-block 元素水平居中？
 [点击查看](https://comicparty.github.io/resume/projects/U7/ex3.html)
 # 4. 单行文本溢出加 ...如何实现?
