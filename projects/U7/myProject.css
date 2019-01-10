@@ -1,22 +1,96 @@
-body {
-    background: #fff2e2;
+body,
+
+ul,
+li,
+div,
+p {
+    margin: 0;
+    padding: 0;
 }
 
-div {
+body {
+    font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-size: 14px;
+    color: #87968e;
+    background: #fff2e3;
+    text-align: center;
+}
+
+.layout {
     width: 800px;
     margin: 0 auto;
+    text-align: center;
+}
+
+#header {
+    color: #87968e;
+}
+
+#header>h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.intro {
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+#header>ul {
+    list-style-type: none;
+    /*padding-left: 0px;*/
+}
+
+.btnu {
+    margin-top: 30px;
+}
+
+#header>.btnu {
+    margin: 40px;
+}
+
+.btn {
+    display: inline-block;
+
+
 
 
 }
-h1{
 
-    color: #86968e;
-
-}
-a:hover {
-    background-color: red;
-}
-a{
+.btna {
+    padding: 6px 14px;
+    margin: 3px;
+    font-weight: normal;
+    border-radius: 2px;
     background-color: #72b890;
-    
+}
+
+.btn>a,
+.btns>a {
+    color: white;
+    text-decoration: none;
+}
+
+.btna:hover {
+    opacity: 0.8;
+    /*opacity属性指定了一个元素的透明度。换言之，opacity属性指定了一个元素后面的背景的被覆盖程度。*/
+}
+
+.btna:active {
+    opacity: 0.6;
+}
+
+.active {
+    opacity: 0.6;
+}
+
+
+
+#footer {
+    margin-top: 30px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #72b890;
 }

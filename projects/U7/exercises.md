@@ -63,12 +63,14 @@ body{
 得到宋体两个字
 # 7. 实现如下效果
 ![](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex7.jpg)
-
+[点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex7.html)
 # 8. 实现如下效果
 ![使用github仓库的地址才有效](https://raw.githubusercontent.com/ComicParty/resume/master/projects/U7/images/ex8.jpg)
+[点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex8.html)
 # 9. 实现如下两个表格效果
 ![](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex9.jpg)
+[点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex9.html)
 # 10. 实现如下三角形
 ![](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex10.jpg)
-
+[点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex10.html)
 
