@@ -56,11 +56,12 @@ body{
     'Hiragino Sans GB'-单引号是因为有空格，需要让浏览器把他们当成一个整体来解释-*/
 }
 ```
-2.使用函数`unecsape('')`对\5b8b\4f53进行取反
+2.使用函数`unecsape('')`对\5b8b\4f53进行转换
 `unescape('%u5b8b%u4f53');`
 得到宋体两个字
 # 7. 实现如下效果
 ![](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex7.jpg)
+
 # 8. 实现如下效果
 ![使用github仓库的地址才有效](https://raw.githubusercontent.com/ComicParty/resume/master/projects/U7/images/ex8.jpg)
 # 9. 实现如下两个表格效果

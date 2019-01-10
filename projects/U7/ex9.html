@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex9</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+        .layout{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .layout>table{
+            margin-top: 30px;
+        }
+        .h-table{
+            border-collapse: collapse; 
+            /*border-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。
+            在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。
+            分隔（separated）模式是HTML表格的传统模式。相邻单元格都拥有不同的边框。
+            边框之间的距离是通过CSS属性 border-spacing 来确定的。*/
+            /*border-spacing: 0;*/
+            width: 100%;
+            border: 1px solid #ccc; 
+        }
+        .h-table tr{
+            border-bottom: 1px solid #ddd;/**/
+            text-align: left;
+        }
+        tr>th{
+            padding: 8px;
+        }
+        tr>td{
+            padding: 8px;
+        }
+        tr:nth-child(even){
+                 background-color: #f1f1f1; 
+        }
+        .v1 th{
+            background-color: #4CAF50;
+        }
+        .table2{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <table class="h-table">
+            <tbody>
+                <tr class="v1">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td>Johnson</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td>Bo</td>
+                    <td>Nilsson</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Mike</td>
+                    <td>Ross</td>
+                    <td>35</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="h-table table2">
+            <!-- <tbody>  如果不写<tbody>标签，浏览器在页面中会自动加上，但是源代码中是没有的 -->
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td>Johnson</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td>Bo</td>
+                    <td>Nilsson</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Mike</td>
+                    <td>Ross</td>
+                    <td>35</td>
+                </tr>
+            <!-- </tbody> -->
+        </table>
+    </div>
+</body>
+</html>

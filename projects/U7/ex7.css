@@ -1,0 +1,42 @@
+div{
+    width: 600px;
+    margin: 0 auto;
+}
+.ul1{
+    list-style-type: none;
+    /*none不显示列表项的标记*/
+    padding: 0; 
+    /*默认ul有40px的padding可能是用来给列表项标记使用的，需要手动清除
+    如果没有手动清除， -list-style-type:none;又双叒叕没有设置的话-，disc（list-style-type默认的值）会在ul外面显示！
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/list-style-type MDN参考链接
+    */
+}
+.ul1>.li2017{
+    margin-top: 30px;
+    padding: 1px 16px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+
+}
+.li2017:first-child{
+    /*border: solid rgb(204,204,204) 1px;*/
+    border-radius: 3px;
+}
+.li2017.li2{
+    background-color: #ffe7e7;
+    border: none;
+    border-left: 6px solid #f44336;
+    /*重新设置粗线的时候，重新设置 solid样式 很重要，不然不会 生成border，颜色不设置会默认黑色*/
+    border-right: 7px solid #f44336;
+}
+.li2017.li3{
+    background-color: #ffffd7;
+    border: none;
+    border-top: 6px solid rgb(255, 235, 59);
+    border-bottom: 7px solid rgb(255, 235, 59);
+}
+.li2017.li4{
+    background-color: #ffffd7;
+    border: 1px solid #4CAF50;
+    border-bottom: 7px solid #4CAF50 ;
+}
