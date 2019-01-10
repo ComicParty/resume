@@ -24,11 +24,13 @@ inline level的padding属性设置后，上、下、左、右视觉上可以看�
         [github 设置 markdown图片大小 教程](https://blog.csdn.net/lovechris00/article/details/82379382)
 3.block level可以包含 block level和inline level，
 而inline level只能包含数据和其它行内元素。
+
 # 3. 如何让块级元素水平居中？如何让行内元素水平居中?如何让 inline-block 元素水平居中？
 [点击查看](https://comicparty.github.io/resume/projects/U7/ex3.html)
 # 4. 单行文本溢出加 ...如何实现?
 [点击查看](https://comicparty.github.io/resume/projects/U7/ex4.html)
 # 5. px, em, rem,vw 有什么区别
+
 > px:px 是 pixels（像素）的缩写，是一种绝对单位，用于屏幕显示器上，传统上一个像素对应于计算机屏幕上的一个点，而对于高清屏则对应更多。任何现代显示屏，不管是手机，平板，笔记本还是电视都是由成千上万的像素组成的，所以我们可以使用这些像素来定义长度。
 > em:是相对长度单位，这个单位表示元素的font-size的计算值。如果用在font-size 属性本身，它会继承父元素的font-size。不过其参照值并不是固定不变的，而是不同的属性有不同的参照值。
 > rem:也是一种相对单位，不过不一样的是 rem 是相对于根元素 html 的 font-size 来计算的，所以其参照物是固定的。（rem的r就是表示root，虽然rem相对em进步了很多，但是由于是新技术，不支持IE8以下（包括IE8）,不过幸喜的是移动端可以放心使用）
