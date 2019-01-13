@@ -1,0 +1,24 @@
+@font-face {font-family: "tiangou";
+/*注意下面几个url的路径*/
+  src: url('./font/iconfont.css/iconfont.eot?t=1547390393782'); /* IE9 */
+  src: url('./font/iconfont.css/iconfont.eot?t=1547390393782#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAVkAAsAAAAACmgAAAUXAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqIdIctATYCJAMICwYABCAFhG0HMBvTCBHVoxWRfZXAU0/yYkrQaHnFFinBjyE9uc1MqwMbYu7FwTf99Jv6Di4pEjGgopQ0FZGpCmyebI7Mzf9ceOC55r9r43vHq8A12GjgidFMewNuHt5d70Nby6ICTCGDImkecKK3M9vd7baHVx3GmcdxN4kLOAjDPMMCYNs0/iVGRagu2fOt/+UZgd0R8ut/jpkuSgeWH2guGW17owAcJdCAIhovCvTsdnQgfIt4FheSyZn5nwYIACNSMtSqUqsR5DAQIZ6z6N61PeQ+NZxARCiZmVgZAzpDQoVTiUvATPP30V8RFADBFAEU1JtX7gS1104cQ8r/y4zGw67OCACXdQAkgGQAGKAxaa4jsoXJppihzDExWYS5783O/19nd5bF/3mAUgCxhUvDJXuaOCp3UsWE/DkGEAzQCaBHoV4AwSWSoWlrXatkQZCzhFC0swPHDT18G563xmfuVLp24nU+VAntuJNlCPgGgraaXXs0TEm8WPXs7el6WIck/xr+ZOPAenmdf4OysdGw7mlFHaGmBqeBRneLX1eErnfuzAyNW+8tut9CflW8qgsb89iLX1/zqPyFO735JSGznbduD4YWscieTm3Y218nBINbf5t9/0y5UzpIU/tWvglSIv7QGFaeJn4eGQEO1KbnKkvdwo4kWk/SZLUpm5xZbhpQm7DGGVVdOOLyJYxfYVmkBAC7kxkG5L7UhaWRusEtj1Y7cM0GpBxlA+tDNJXX1/Cr1sGaz7WGnccZkDvMQbPGoU+TpspawFD09h0bogg1DQ5kT7WmHnRTY6MR/oaYHeJy5lCZXN0xIkrqZ/Ed9uaK8W1yiD6z5/SReq19WX374AsPnb9oR4/UAfXp7BU50VNp6fSnzmNdrGGiSU5v7ftbxfCIIcecVxcN3057VgSjTp/a7qZ899RMXMFMRlTxjatgOLyKlEI2pF15eeWqWA7k1I+dRfiOzXJR+Mqb06g3XhGEIZvHVBS8Snh/qtGJ4JiDDvvFm1rTvmbrmjWds5N25ufnSK2yif6G0U9qvGwo5PQ/Vs4Z252YPp3okS42JdasRdGnEKTwSthUYUBehJF8M5oKCgQ51GGzOkIKKUeaK7SvwpU5ZLcYtjpOEXtKL0Qyo32HGDqmceMO7V101opRWiU8OpDXv0pEAx6UpuXin16lT9EfgaXMfhX6UaGhlFN7wjah5EDu3xE+j7kvxaY05ut4QsQQz6sGcV9brbbPHJPdtq+n1e6eHsjKVBUXhgWHead4h3mHuirNeseh01Nm8rat38/2HWyq+HNEaZZ8jirhA6oaiAZbcuvVp+jikn6OfiXFtNM2pm2Sm2a8mRqTYHKCQ15DQTkA4P8SA7n9EY8C5V7uvbb24q+Z/V833GvfZ7/JzWYF1K62IPCT5WSswG8eaIj4ySHjRDAT+k9ByKAP4D+wuzwpquNUE0co3K/EGiTCBRJFQmJsMpiwssGMUgaMJFXXs9wGiKCYBoBEExkgDluBYHMUSA6XkRj7GEx4b8HMESQwmgTuHVlxgUTphIrRgv5DNPvmFB1LK/eG/l0UeXkm6YXUog/GbgjGVtyQqpjTPn5iduBor7Cw87CUHQ7aExruAvMx972jXqgzexVSOKFitKD/EM2+Ob0+y9Djb+jfRVFC2Rf9C6nF7mHshgzIVbxlKtuV4vbxE4ugA3fJ3isswogFwzsc9LCEhrtQIHjMvajlsoq75qV17XYghBSguF5wUAT/yFFtQgAA') format('woff2'),
+  url('./font/iconfont.css/iconfont.woff?t=1547390393782') format('woff'),
+  url('./font/iconfont.css/iconfont.ttf?t=1547390393782') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./font/iconfont.css/iconfont.svg?t=1547390393782#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.tiangousprite {
+  /*注意这里使用的字体 名 和第一行里面的 字体名*/
+  font-family: "tiangou" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yitian:before {
+  content: "\e6b3";
+  /*css和html的unicode码 有点小区别*/
+}
+

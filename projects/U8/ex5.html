@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS sprite</title>
+  <style>
+    .sprite {
+      /*display: inline-block;*/
+      width: 150px;
+      height: 166px;
+      background: url(./images/sprite.jpg) no-repeat;
+      /* 设置背景 */
+      margin-top: 20px;
+    }
+
+    .item1 {
+      background-position: 0 0;
+      /* 设置图标位置 */
+    }
+
+    .item2 {
+      background-position: -220px 0;
+      /* 设置图标位置 */
+    }
+    .item3 {
+      background-position: -433px 0;
+      /* 设置图标位置 */
+    }
+    .item4 {
+      background-position: -656px 0;
+      /* 设置图标位置 */
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="sprite item1""></li>
+    <li class="sprite item2""></li>
+    <li class="sprite item3""></li>
+    <li class="sprite item4""></li>
+  </ul>
+</body>
+
+</html>
