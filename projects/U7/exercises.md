@@ -1,11 +1,13 @@
 # 1.  什么是 CSS 继承?哪些属性能继承，哪些不能？
-答：CSS继承就是 在父元素中进行的一些CSS样式设置，它的子元素会默认进行同样的设置，这就是CSS继承。每个CSS 属性定义的概述都指出了这个属性是默认继承的("Inherited: Yes") 还是默认不继承的("Inherited: no")。
+答：CSS继承就是 在父元素中进行的一些CSS样式设置，它的子元素会默认进行同样的设置，这就是CSS继承。
+每个CSS 属性定义的概述都指出了这个属性是默认继承的("Inherited: Yes") 还是默认不继承的("Inherited: no")。
 会被继承的属性：color,font-size，font-weight,line-height，font-family
 不会被 继承 的属性：border,padding,margin,background-image
 
 # 2. 块级元素和行内元素分别有哪些？
 1.bolck level会默认换行显示,默认display:block;
   inline level只显示它本身的宽度,默认：display:inline;
+
 2.block level 可以设置 上、右、下、左的margin,padding属性；
 而inline level的margin属性上、下不生效的，只有左右生效，
 <p align="center">
@@ -21,14 +23,28 @@ inline level的padding属性设置后，上、下、左、右视觉上可以看�
         <em>行内元素span的 padding设置效果</em>
     </p>
 </p>
-        [github 设置 markdown图片大小 教程](https://blog.csdn.net/lovechris00/article/details/82379382)
+
+[github 设置 markdown图片大小 教程](https://blog.csdn.net/lovechris00/article/details/82379382)
+
 3.block level可以包含 block level和inline level，
 而inline level只能包含数据和其它行内元素。
 
 # 3. 如何让块级元素水平居中？如何让行内元素水平居中?如何让 inline-block 元素水平居中？
 [点击查看](https://comicparty.github.io/resume/projects/U7/ex3.html)
+
 # 4. 单行文本溢出加 ...如何实现?
 [点击查看](https://comicparty.github.io/resume/projects/U7/ex4.html)
+
+简单来说，就是对目标元素 进行css 3连
+/*注意顺序*/
+```
+    white-space: nowrap;
+    /*不换行*/
+    overflow: hidden;
+    /*文本举出之后隐藏*/
+    text-overflow: ellipsis;
+    /*文本溢出之后变成 ...*/
+```
 # 5. px, em, rem,vw 有什么区别
 
 > px:px 是 pixels（像素）的缩写，是一种绝对单位，用于屏幕显示器上，传统上一个像素对应于计算机屏幕上的一个点，而对于高清屏则对应更多。任何现代显示屏，不管是手机，平板，笔记本还是电视都是由成千上万的像素组成的，所以我们可以使用这些像素来定义长度。
@@ -64,13 +80,32 @@ body{
 # 7. 实现如下效果
 ![](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex7.jpg)
 [点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex7.html)
+
+> 每个块级元素至少生成一个块级盒，称为主要块级盒(principal block-level box)。
+> 一些元素，比如<li>，生成额外的盒来放置项目符号，不过多数元素只生成一个主要块级盒。
+
 # 8. 实现如下效果
 ![使用github仓库的地址才有效](https://raw.githubusercontent.com/ComicParty/resume/master/projects/U7/images/ex8.jpg)
 [点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex8.html)
+
+```
+text-decoration: none;/*text-decoration 这个 CSS 属性是用于设置文本排版（下划线、顶划线、删除线或者闪烁）*/
+cursor: pointer;/*cursor 光标*/
+```
+[MDN text-decoration](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration)
 # 9. 实现如下两个表格效果
 ![](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex9.jpg)
 [点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex9.html)
 # 10. 实现如下三角形
 ![](https://github.com/ComicParty/resume/blob/master/projects/U7/images/ex10.jpg)
 [点击查看-有些选择器写的复杂是为了练习使用！](https://comicparty.github.io/resume/projects/U7/ex10.html)
+
+```
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid red;
+```
 

@@ -21,6 +21,9 @@
 .textalign{  
     text-align: center;
 }
+.textalign :first-child{
+    background-color: lime;
+}
 /*如何让 inline-block 元素水平居中？*/
 .div3{
     border: solid lime 1px;
@@ -34,7 +37,8 @@
     display: inline-block;
 }
 
-/*来源 https://juejin.im/post/582c04032f301e00594327d4*/
+/*来源 https://juejin.im/post/582c04032f301e00594327d4 */
+/*利用display:table-cell属性使内容垂直居中,这个方法在多行文字居中的时候用的比较多;*/
 .inlineBlockDiv2{
     display: table-cell;
     vertical-align: middle;

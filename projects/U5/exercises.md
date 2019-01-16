@@ -25,8 +25,11 @@ CSRF我的理解就是，有人在用户不知情的情况下，使用网站存�
 ```
 1. 他不会被用户看见
 2. 用来防范CSRF攻击，如果服务器端没有收到 这里的键：值，那么很有可能受到了CSRF攻击。
-# 7. 实现如下表单,附上预览地址。其中性别和取向是单选，爱好是多选
-[github Pages](https://comicparty.github.io/resume/projects/U5/exercise7.html)
+
+# 7.实现如下表单,附上预览地址。其中性别和取向是单选，爱好是多选
+
+[github Pages-点击查看](https://comicparty.github.io/resume/projects/U5/exercise7.html)
+
 # 8. label 有什么作用？如何使用？
 主要是实现 文字与选框绑定，如下代码：
 
@@ -36,6 +39,7 @@ CSRF我的理解就是，有人在用户不知情的情况下，使用网站存�
             <input type="text" id="inputname" placeholder="用户名">
 </div>
 ```
+label元素的for属性 与  目标元素的id属性配合
 当我想在input中输入东西时，我可以点击 input显示的输入框。但是当我用label与input绑定时，点击姓名，也可以输入。
 # 9. 以下input有何作用？<input type="submit" value="提交">
 点击后，表单会提交

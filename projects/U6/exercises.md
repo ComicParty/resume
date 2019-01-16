@@ -23,9 +23,10 @@
 <head>
     <link rel="stylesheet" href="./style.css">
     <style>
-        /*引入css文件*/
+        /*使用@import引入css文件*/
         @import url("hello.css");
         @import url(hello1.css);
+        @import 'hetu.css';
 </head>
 ```
 
@@ -100,7 +101,7 @@ E::before	      在E元素之前插入生成的内容
 E::after	         在E元素之后插入生成的内容
 
 # 7. 以下选择器分别是什么意思?
-[github](https://github.com/ComicParty/resume/blob/master/projects/U6/exercise7%E5%AF%B9%E4%B8%8B%E5%88%97CSS%E9%80%89%E6%8B%A9%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%A7%A3%E9%87%8A.css)
+[点击查看](https://github.com/ComicParty/resume/blob/master/projects/U6/exercise7%E5%AF%B9%E4%B8%8B%E5%88%97CSS%E9%80%89%E6%8B%A9%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%A7%A3%E9%87%8A.css)
 # 8. 选择器的优先级是如何计算的？
 这个是相当的复杂！有多个标准
 根据选择器的组成，优先级从高到低分别是：
@@ -131,6 +132,6 @@ PS:-优先级从低到高排序-
 2. 如果等级相同，就根据数量进行判断3～7级的数量进行判断，谁的数量多谁胜出。
 3. 如果数量还相同，谁后写，谁优先级高。
 # 9. 运行如下代码，并对结果做出解释
-[使用开发者工具进行查看](https://comicparty.github.io/resume/projects/U6/exercise9.html)
+[点击-在浏览器中使用开发者工具进行查看](https://comicparty.github.io/resume/projects/U6/exercise9.html)
 
 

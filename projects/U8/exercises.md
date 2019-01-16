@@ -97,6 +97,23 @@ background-color: rgba(0，0，0，0.2) //只是背景色透明
 所以这个图标，现在就叫做 字体图标 啦！
 
 [点击查看-avbody燥起来！](https://comicparty.github.io/resume/projects/U8/ex7.html)
- 
 
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U8/images/UseImage.jpg" alt="Sample"  width="340" height="176">
+    <p align="center">
+        <em>UseImage</em>
+    </p>
+</p>
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U8/images/CSSSprites.jpg" alt="Sample"  width="439" height="214">
+    <p align="center">
+        <em>CSSSprites</em>
+    </p>
+</p>
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U8/images/IconFont.jpg" alt="Sample"  width="148" height="203">
+    <p align="center">
+        <em>IconFont</em>
+    </p>
+</p>
 
