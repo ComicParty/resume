@@ -1,4 +1,11 @@
-# 1. 浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响？计算 BFC 的高度时，浮动元素也参与计算
+# 1. 浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响？
+float CSS属性指定一个元素应沿其容器的左侧或右侧放置，允许文本和内联元素环绕它。该元素从网页的正常流动中移除，尽管仍然保持部分的流动性（与绝对定位相反）。
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.jpg" alt="Sample"  width="880" height="450">
+    <p align="center">
+        <em>influence</em>
+    </p>
+</p>
 # 2. 清除浮动指什么？如何清除浮动？ 两种以上方法。
 ###### 清除前面兄弟元素浮动:
 
@@ -66,7 +73,19 @@ clear:right;
     </p>
 </p>
 # 4. z-index 有什么作用？ 如何使用？
+z-index相当于z轴，有了它，就有了前后之分，在前面的-数值大的-可以看到，在后面-被遮挡住了-就看不到。
+z-index 属性只对**定位元素**生效，也就是 position 属性不为 static 的元素。
+除了默认值 auto， z-index 可以设置为任意整数，正数，0，负数都可以。
+数值大的在上面(auto 数值上相当于0)。
+数值相同的，在 HTML 结构中排后面的在上面。
 # 5. 实现如下导航栏效果 ：[查看效果-http链接](http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/code/hunger-ui/navigation.html)，在下方附上线上预览地址
+[点击查看](https://comicparty.github.io/resume/projects/U9/exercise5.html)
+有用的代码
+```
+text-decoration: none; //a链接的下划线
+list-style: none; //列表的样式
+cursor: pointer;//鼠标样式
+```
 # 6. 实现如下效果，回复[预览链接-http](http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/code/hunger-ui/alert.html)
 <p align="center">
     <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/ex6-x615y520.jpg" alt="Sample"  width="363" height="277">
@@ -74,7 +93,7 @@ clear:right;
         <em>效果图</em>
     </p>
 </p>
-
+[点击查看](https://comicparty.github.io/resume/projects/U9/exercise6.html)
 # 7. 把下面的话抄写三遍:
 如果用了浮动，其父元素一般(最好)需要清除浮动
 如果用了绝对定位，一般(最好)要给参考点设置position:relative
@@ -82,6 +101,9 @@ clear:right;
 1遍
 如果使用了浮动，其父元素最好清除浮动
 如果使用了绝对定位，最好给参考点设置position:relative
-2
+2如果使用了浮动，它的父元素最好清除浮动。自己想为什么
+如果使用了绝对定位，最好要给参考点设置`position:relative;`，如果它找不到有`position:relative;`的参考点，那么会使用默认参考点`<html>`。
+3如果使用了float,其父元素最好清除浮动。
+如果使用了absolute,最好设置一个`position:relative;`
 
 

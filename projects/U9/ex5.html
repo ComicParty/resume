@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ex5</title>
+    <style>
+    /*  *{
+            margin: 0;
+            padding: 0;
+        }  */
+    .nav {
+        margin: 0 auto;
+        width: 600px;
+        background-color: #f1f1f1;
+        box-shadow: -1px 2px 4px 2px rgba(0, 0, 0, 0.16);
+    }
+
+    .clearfix::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    a {
+        /* display:inline-block; */
+        display: block;
+        color: #333;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background: #ccc;
+    }
+
+    ul,
+    li {
+        padding: 0px;
+        /* margin:0; */
+        list-style: none;
+    }
+
+    .navb1>li {
+        position: relative;
+        float: left;
+    }
+
+    .navb2 {
+
+        background: white;
+        box-shadow: -1px 2px 4px 2px rgba(0, 0, 0, 0.16);
+        position: absolute;
+        /*需要 有一个 relative */
+        top: 100%;
+        /* 代表了父容器的高度 */
+        /* top:0; */
+        /* left: 10px; */
+        display: none;
+    }
+
+    .navb1>li:hover .navb2 {
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav clearfix">
+        <ul class="navb1">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">更多</a>
+                <ul class="navb2">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">知乎</a></li>
+                    <li><a href="#">博客</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
