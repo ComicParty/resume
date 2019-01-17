@@ -1,12 +1,14 @@
 # 1. 浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响？
 float CSS属性指定一个元素应沿其容器的左侧或右侧放置，允许文本和内联元素环绕它。该元素从网页的正常流动中移除，尽管仍然保持部分的流动性（与绝对定位相反）。
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.jpg" alt="Sample"  width="880" height="450">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.png" alt="Sample"  width="880" height="450">
     <p align="center">
         <em>influence</em>
     </p>
 </p>
+
 # 2. 清除浮动指什么？如何清除浮动？ 两种以上方法。
+浮动元素会造成其父容器高度坍塌，影响其它元素的定位，因此要清理浮动。
 ###### 清除前面兄弟元素浮动:
 
 ```
@@ -35,7 +37,7 @@ clear:right;
 ```
 这样设置后，.box的浮动就会被清除，.container的尺寸会被正常计算，
 但是不美观，请看下面一种方法
-2. 给目标元素，添加一个伪元素，这样也会清除浮动
+2.给目标元素，添加一个伪元素，这样也会清除浮动
 ```
 .clearfix::after {
     content:"";
@@ -43,7 +45,7 @@ clear:right;
     clear: both;
 }
 ```
-3.给父元素新建一个 BFC(块格式化上下文)
+3. 给父元素新建一个 BFC(块格式化上下文)
 
 ```<div class="container">
     <div class="box"></div>
@@ -72,12 +74,14 @@ clear:right;
         <em>position</em>
     </p>
 </p>
+
 # 4. z-index 有什么作用？ 如何使用？
 z-index相当于z轴，有了它，就有了前后之分，在前面的-数值大的-可以看到，在后面-被遮挡住了-就看不到。
 z-index 属性只对**定位元素**生效，也就是 position 属性不为 static 的元素。
 除了默认值 auto， z-index 可以设置为任意整数，正数，0，负数都可以。
 数值大的在上面(auto 数值上相当于0)。
 数值相同的，在 HTML 结构中排后面的在上面。
+
 # 5. 实现如下导航栏效果 ：[查看效果-http链接](http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/code/hunger-ui/navigation.html)，在下方附上线上预览地址
 [点击查看](https://comicparty.github.io/resume/projects/U9/exercise5.html)
 有用的代码
@@ -86,6 +90,7 @@ text-decoration: none; //a链接的下划线
 list-style: none; //列表的样式
 cursor: pointer;//鼠标样式
 ```
+
 # 6. 实现如下效果，回复[预览链接-http](http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/code/hunger-ui/alert.html)
 <p align="center">
     <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/ex6-x615y520.jpg" alt="Sample"  width="363" height="277">
