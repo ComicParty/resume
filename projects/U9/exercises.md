@@ -1,7 +1,7 @@
 # 1. 浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响？
 float CSS属性指定一个元素应沿其容器的左侧或右侧放置，允许文本和内联元素环绕它。该元素从网页的正常流动中移除，尽管仍然保持部分的流动性（与绝对定位相反）。
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.png" alt="Sample"  width="880" height="450">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.jpg" alt="Sample"  width="880" height="450">
     <p align="center">
         <em>influence</em>
     </p>
@@ -84,7 +84,8 @@ z-index 属性只对**定位元素**生效，也就是 position 属性不为 sta
 
 # 5. 实现如下导航栏效果 ：[查看效果-http链接](http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/code/hunger-ui/navigation.html)，在下方附上线上预览地址
 [点击查看](https://comicparty.github.io/resume/projects/U9/exercise5.html)
-有用的代码
+
+实用代码
 ```
 text-decoration: none; //a链接的下划线
 list-style: none; //列表的样式
@@ -98,7 +99,9 @@ cursor: pointer;//鼠标样式
         <em>效果图</em>
     </p>
 </p>
+
 [点击查看](https://comicparty.github.io/resume/projects/U9/exercise6.html)
+
 # 7. 把下面的话抄写三遍:
 如果用了浮动，其父元素一般(最好)需要清除浮动
 如果用了绝对定位，一般(最好)要给参考点设置position:relative
