@@ -1,7 +1,7 @@
 # 1. 浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响？
 float CSS属性指定一个元素应沿其容器的左侧或右侧放置，允许文本和内联元素环绕它。该元素从网页的正常流动中移除，尽管仍然保持部分的流动性（与绝对定位相反）。
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.jpg" alt="Sample"  width="880" height="450">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.jpg" alt="Sample"  width="880" height="750">
     <p align="center">
         <em>influence</em>
     </p>
@@ -109,8 +109,10 @@ cursor: pointer;//鼠标样式
 1遍
 如果使用了浮动，其父元素最好清除浮动
 如果使用了绝对定位，最好给参考点设置position:relative
+
 2如果使用了浮动，它的父元素最好清除浮动。自己想为什么
 如果使用了绝对定位，最好要给参考点设置`position:relative;`，如果它找不到有`position:relative;`的参考点，那么会使用默认参考点`<html>`。
+
 3如果使用了float,其父元素最好清除浮动。
 如果使用了absolute,最好设置一个`position:relative;`
 
