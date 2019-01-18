@@ -97,7 +97,17 @@
     </p>
 </p>
 
-# 2.实现下方链接中的效果，附上预览链接。
+# 2.实现下方图中的效果，附上预览链接。
+
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/ex3.jpg" alt="Sample"  width="843" height="669">
+    <p align="center">
+        <em>实现效果</em>
+    </p>
+</p>
+
+[点击查看](https://comicparty.github.io/resume/projects/U10/exercise3.html)
+
 # 3.在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？给个父子外边距合并的范例
 # 4.什么是 CSS hack？在哪个网站查看标签(属性)的浏览器兼容情况。
 ie6、7的 hack 写法是？
