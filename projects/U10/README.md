@@ -16,14 +16,14 @@
 1. 当使用float属性时，会造成父元素的塌陷，这时候可以为父元素生成一个新的BFC--来解决父元素塌陷问题。-当然还是建议使用伪元素的方法解决父元素塌陷-
 
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U10/images/浮动造成的父元素塌陷.jpg" alt="Sample"  width="880" height="1150">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U10/images/浮动造成的父元素塌陷.jpg" alt="Sample"  width="940" height="772">
     <p align="center">
         <em>浮动造成的父元素塌陷.jpg</em>
     </p>
 </p>
 
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U10/images/生成BFC.jpg" alt="Sample"  width="880" height="1150">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U10/images/生成BFC.jpg" alt="Sample"  width="842" height="908">
     <p align="center">
         <em>生成BFC.jpg</em>
     </p>
@@ -106,7 +106,7 @@
     </p>
 </p>
 
-[点击查看](https://comicparty.github.io/resume/projects/U10/exercise2.html)
+[已完成-点击查看](https://comicparty.github.io/resume/projects/U10/exercise2.html)
 
 # 3.在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？给个父子外边距合并的范例
 #### 在什么场景下会出现外边距合并:
