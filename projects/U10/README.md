@@ -247,7 +247,7 @@ PostCSS 接收一个 CSS 文件并提供了一个 API 来分析、修改它的�
 ```
 .clearfix:after{
   content: '';
-  display: block;
+  display: table;
   clear: both;
 }
 ```
