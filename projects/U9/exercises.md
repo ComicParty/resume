@@ -1,7 +1,7 @@
 # 1. 浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响？
 float CSS属性指定一个元素应沿其容器的左侧或右侧放置，允许文本和内联元素环绕它。该元素从网页的正常流动中移除，尽管仍然保持部分的流动性（与绝对定位相反）。
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/influence.jpg" alt="Sample"  width="880" height="750">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/10/images/influence.jpg" alt="Sample"  width="880" height="750">
     <p align="center">
         <em>influence</em>
     </p>
@@ -69,7 +69,7 @@ clear:right;
 > sticky :盒位置根据正常流计算(这称为正常流动中的位置)，然后相对于该元素在流中的 flow root（BFC）和 containing block（最近的块级祖先元素）定位。在所有情况下（即便被定位元素为 table 时），该元素定位均不对后续元素造成影响。当元素 B 被粘性定位时，后续元素的位置仍按照 B 未定位时的位置来确定。position: sticky 对 table 元素的效果与 position: relative 相同
 
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/position.jpg" alt="Sample"  width="880" height="450">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/10/images/position.jpg" alt="Sample"  width="880" height="450">
     <p align="center">
         <em>position</em>
     </p>
@@ -83,7 +83,7 @@ z-index 属性只对**定位元素**生效，也就是 position 属性不为 sta
 数值相同的，在 HTML 结构中排后面的在上面。
 
 # 5. 实现如下导航栏效果 ：[查看效果-http链接](http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/code/hunger-ui/navigation.html)，在下方附上线上预览地址
-[点击查看](https://comicparty.github.io/resume/projects/U9/exercise5.html)
+[点击查看](https://comicparty.github.io/resume/projects/10/exercise5.html)
 
 实用代码
 ```
@@ -94,13 +94,13 @@ cursor: pointer;//鼠标样式
 
 # 6. 实现如下效果，回复[预览链接-http](http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/code/hunger-ui/alert.html)
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U9/images/ex6-x615y520.jpg" alt="Sample"  width="363" height="277">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/10/images/ex6-x615y520.jpg" alt="Sample"  width="363" height="277">
     <p align="center">
         <em>效果图</em>
     </p>
 </p>
 
-[点击查看](https://comicparty.github.io/resume/projects/U9/exercise6.html)
+[点击查看](https://comicparty.github.io/resume/projects/10/exercise6.html)
 
 # 7. 把下面的话抄写三遍:
 如果用了浮动，其父元素一般(最好)需要清除浮动

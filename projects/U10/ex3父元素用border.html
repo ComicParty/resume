@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JS Bin</title>
+  <title>父元素用border</title>
   <style>
     body{
       margin:0px;
@@ -11,21 +11,27 @@
     .d{
       margin:5px 0;
       background:pink;
+      
+    }
+    
+    .d1d{
+      border:1px solid;
     }
     .d1{
-      margin-left:10px;
+      margin:20px;
     }
     .d2{
-      margin-left:20px;
-      margin-bottom:20px;
+      margin:20px;
     }
   </style>
 </head>
 <body>
   <div class="d">
     <p>子元素p</p>
-    <div class="d1">
-      zuo:10
+    <div class="d1d">
+      <div class="d1">
+        我的父元素用border隔离了我与 原来的相邻元素的margin合并。border设置为与背景色相同 或 透明就好了
+    </div>
     </div>
     <div class="d2">
       zuo:20
