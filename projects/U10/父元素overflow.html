@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>我无法与原来的相邻元素的margin合并</title>
+  <style>
+    body{
+      margin:0px;
+      background:grey;
+    }
+    .d{
+      margin:5px 0;
+      background:pink;
+      
+    }
+    
+    .d1d{
+      overflow:hidden;
+    }
+    .d1{
+      margin:20px;
+    }
+    .d2{
+      margin:20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="d">
+    <p>子元素p</p>
+    <div class="d1d">
+      <div class="d1">
+        我的父元素用overflow:hidden;生成了新的BFC。让我无法与原来的相邻元素的margin合并
+    </div>
+    </div>
+    <div class="d2">
+      zuo:20
+      xia:20
+    </div>
+  </div>
+</body>
+</html>

@@ -120,10 +120,23 @@ margin是有尺寸的，合并后的margin 大于等于 （两个margin中的）
 PS：只有普通文档流中块框的垂直外边距才会发生外边距合并。行内框、浮动框或绝对定位之间的外边距不会合并。
 
 #### 如何不让相邻元素外边距合并: 
-最简单的方法，让他们不相邻，给其中一个元素加一个父元素就好了。
-[父元素用overflow:hidden](https://comicparty.github.io/resume/projects/U10/ex3父元素overflow.html) 同样的还有用padding也可以
-
+所有的解决方法都不简单
+* 让他们不相邻，给其中一个元素加一个父元素,并生成新的BFC。
+[父元素用overflow:hidden](https://comicparty.github.io/resume/projects/U10/ex3父元素overflow.html) 
+* 其中一个元素加一个父元素，用border或padding隔离
 [ex3父元素用border](https://comicparty.github.io/resume/projects/U10/ex3父ex3父元素用border.html)
+* 使用float不为visible；
+[点击查看](https://comicparty.github.io/resume/projects/U10/float.html)
+上方效果图中
+li的float为left。
+
+```
+.h-card{
+        float: left;
+        margin: 30px;
+        ......
+```
+其所有margin都不会产生合并！
 
 #### 父子外边距合并的范例：
 [点击查看 合并](https://comicparty.github.io/resume/projects/U10/exercise3.1.html)
