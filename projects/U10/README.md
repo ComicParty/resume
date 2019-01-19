@@ -116,7 +116,9 @@
 
 #### 如何合并:
 margin是有尺寸的，合并后的margin 大于等于 （两个margin中的）最小值。
+
 [点击查看 合并](https://comicparty.github.io/resume/projects/U10/ex3.html)
+
 PS：只有普通文档流中块框的垂直外边距才会发生外边距合并。行内框、浮动框或绝对定位之间的外边距不会合并。
 
 #### 如何不让相邻元素外边距合并: 
@@ -126,9 +128,8 @@ PS：只有普通文档流中块框的垂直外边距才会发生外边距合并
 * 其中一个元素加一个父元素，用border或padding隔离
 [ex3父元素用border](https://comicparty.github.io/resume/projects/U10/ex3父ex3父元素用border.html)
 * 使用float不为visible；
-[点击查看](https://comicparty.github.io/resume/projects/U10/float.html)
-上方效果图中
-li的float为left。
+
+[点击查看](https://comicparty.github.io/resume/projects/U10/float.html)上方效果图中,li的float为left。
 
 ```
 .h-card{
@@ -147,6 +148,7 @@ li的float为left。
 > 这个时候我们就需要针对不同的浏览器去写不同的CSS，让它能在不同的浏览器中也能得到我们想要的页面效果。
 
 [browserhacks 查 Hack 的写法](http://browserhacks.com/)
+
 [caniuse.com 查CSS属性兼容](https://caniuse.com/)
 
 # 5.ie6、7的 hack 写法是？
@@ -209,14 +211,16 @@ IE条件注释法(即HTML条件注释Hack)：针对所有IE(注：IE10+已经不
 #### js 能力检测
 这个没学，先简单的回答下
 js和css一样，在 浏览器 中会遇到 兼容问题，**js 能力检测**就是检测 浏览器 有没有能力支持 特定的JS代码。
-[简书-了解一下](https://www.jianshu.com/p/3362bd4d67b7)
+
+[简书-了解 js浏览器能力检测](https://www.jianshu.com/p/3362bd4d67b7)
 #### html5shiv.js
 [HTML5 Shiv](https://github.com/aFarkas/html5shiv)HTML5 Shiv支持在旧版Internet Explorer中使用HTML5分区元素，并为Internet Explorer 6-9，Safari 4.x（和iPhone 3.x）以及Firefox 3.x提供基本的HTML5样式。
 #### respond.js
 [Respond.js](https://github.com/scottjehl/Respond)此脚本的目标是提供快速轻量级（3kb缩小/ 1kb gzip）脚本，以便在不支持CSS3媒体查询的浏览器中启用响应式Web设计 - 特别是Internet Explorer 8及更低版本。它以这样的方式编写，它可能会修补对其他非支持浏览器的支持（很快就会有更多信息）。
 #### css reset
 css reset是为了解决 早期的浏览器支持和理解的CSS规范不同，导致渲染页面时效果不一致，而出现的很多兼容性问题。
-早期代码如下：`* { margin:0; padding:0 }`
+早期代码如下：`* { margin:0; padding:0 }` 简单粗暴
+
 [关于CSS Reset 那些事（一）之 历史演变与Normalize.css](https://segmentfault.com/a/1190000003021766)
 #### normalize.css
 [normalize.css](https://github.com/necolas/normalize.css):CSS重置的现代替代方案
