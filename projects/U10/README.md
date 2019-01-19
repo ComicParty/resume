@@ -106,7 +106,7 @@
     </p>
 </p>
 
-[已完成-点击查看](https://comicparty.github.io/resume/projects/U10/exercise2.html)
+[已完成-点击查看](https://comicparty.github.io/resume/projects/U10/ex2.html)
 
 # 3.在什么场景下会出现外边距合并？如何合并？如何不让相邻元素外边距合并？给个父子外边距合并的范例
 #### 在什么场景下会出现外边距合并:
@@ -116,7 +116,7 @@
 
 #### 如何合并:
 margin是有尺寸的，合并后的margin 大于等于 （两个margin中的）最小值。
-[点击查看 合并](https://comicparty.github.io/resume/projects/U10/exercise3.html)
+[点击查看 合并](https://comicparty.github.io/resume/projects/U10/ex3.html)
 PS：只有普通文档流中块框的垂直外边距才会发生外边距合并。行内框、浮动框或绝对定位之间的外边距不会合并。
 
 #### 如何不让相邻元素外边距合并: 
@@ -139,7 +139,7 @@ li的float为left。
 其所有margin都不会产生合并！
 
 #### 父子外边距合并的范例：
-[点击查看 合并](https://comicparty.github.io/resume/projects/U10/exercise3.1.html)
+[点击查看 合并](https://comicparty.github.io/resume/projects/U10/ex3.1.html)
 
 # 4.什么是 CSS hack？在哪个网站查看标签(属性)的浏览器兼容情况。
 
