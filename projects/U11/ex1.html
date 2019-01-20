@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,9 +28,35 @@
 </head>
 
 <body>
-    <!-- main必需在上面 -->
-    <div class="main"></div>
-    <div class="aside"></div>
-</body>
+    <div class="main">问题太多了，main必需在adide上面</div>
+    <div class="aside">因为main使用了 float,还需要自己设置宽度，字都跑出来了</div>
+</body> -->
 
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+        }
+        #aside{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #main{
+            margin-left: 210px;
+            height: 320px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="aside">aside使用float</div>
+    <div id="main">main只要设定高度，宽度由 block的特性自己  填满就好了。</div>
+</body>
 </html>
