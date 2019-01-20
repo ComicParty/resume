@@ -1,4 +1,5 @@
 # 1.列举CSS编码规范
+规范超级无敌巨多，给我10天时间消化消化，我也学不完T_T
 [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
 
 [bootstrap 编码规范](https://codeguide.bootcss.com/)
@@ -30,5 +31,6 @@
 </p>
 
 [已完成-点击查看](https://comicparty.github.io/resume/projects/U12/ex3.html)
-
+ps:突然想到，  利用 背景色（background-color和border可以同时用，但是要同色。）也可以做到三角，但是要在 对角线加个渐变。
+PS：用伪元素的时候，给伪元素添加background图片 是否也可以？
 
