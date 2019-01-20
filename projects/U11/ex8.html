@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>固定宽高的块在浏览器窗口水平垂直居中</title>
+    <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fixedblock {
+        color: white;
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        background-color: black;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="fixedblock">
+        <p>position: absolute;//参考点是html 绝对定位
+        </p>
+        <p>50%是点的位置，整个块的位置就会偏移，</p>
+        <p>left: 50%; //html 宽的的50%</p>
+        <p>top: 50%;//html的高的50%</p>
+        <p>用 负margin解决
+            margin-left: -150px;
+            margin-top: -150px;*/</p>
+        <p>必需是尺寸固定的块</p>
+    </div>
+</body>
+
+</html>

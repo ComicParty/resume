@@ -48,11 +48,11 @@
 > 它可以作为一款 CSS 前置处理器( preprocessor ) 使用, 就像 Sass 和 Less 等一样，使用 postcss-simple-vars, postcss-mixins, postcss-nested, postcss-sass-extend 等插件来实现 Sass 提供的 变量， mixin，选择器嵌套，extend 等功能。如果你不想自己配置，也可以使用一款已经打包好这些功能， 语法与 Sass 相似的插件precss 来实现preprocessor。
 
 [资料来源-认识 PostCSS](https://segmentfault.com/a/1190000010681017)
-# 4.实现如下居中方式，并附上 Demo 链接 要求：块级元素固定宽度，水平居中
+# 4.实现如下居中方式，并附上 Demo 链接 
 <p align="center">
     <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex4.jpg" alt="Sample"  width="340" height="150">
     <p align="center">
-        <em>ex4.jpg</em>
+        <em>要求：块级元素固定宽度，水平居中</em>
     </p>
 </p>
 
@@ -65,5 +65,46 @@
         <em>要求：大段文字在容器内水平垂直居中</em>
     </p>
 </p>
+
+[已完成-点击查看](https://comicparty.github.io/resume/projects/U11/ex5.html)
+# 6.实现如下居中方式，并附上 Demo 链接
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex6.jpg" alt="Sample"  width="340" height="150">
+    <p align="center">
+        <em>要求：并列三个按钮，在父容器内水平居中</em>
+    </p>
+</p>
+
+[已完成-点击查看](https://comicparty.github.io/resume/projects/U11/ex6.html)
+
+# 7.实现如下居中效果
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex7.jpg" alt="Sample"  width="340" height="150">
+    <p align="center">
+        <em>要求：图片在容器内水平垂直居中，容器宽高大于图片宽高</em>
+    </p>
+</p>
+
+[已完成-点击查看](https://comicparty.github.io/resume/projects/U11/ex7.html)
+
+# 8.实现如下居中方式
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex8.jpg-middle" alt="Sample"  width="340" height="150">
+    <p align="center">
+        <em>要求： 固定宽高的块在浏览器窗口水平垂直居中</em>
+    </p>
+</p>
+
+[已完成-点击查看](https://comicparty.github.io/resume/projects/U11/ex8.html)
+
+# 9.实现如下居中方式
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex9.jpg" alt="Sample"  width="340" height="150">
+    <p align="center">
+        <em>要求： 不定宽高的块在浏览器窗口水平垂直居中</em>
+    </p>
+</p>
+
+[已完成-点击查看](https://comicparty.github.io/resume/projects/U11/ex9.html)
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>不定宽高的块在浏览器窗口水平垂直居中</title>
+    <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: inline-block;
+        background-color: grey;
+
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>这里是标题1111111222222222</h1>
+        <p>这里是内容，内容宽高不定</p>
+        <p> html,
+            body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            }</p>
+        <p>这样是为了扩大页面&消除滚动条</p>
+    </div>
+</body>
+
+</html>

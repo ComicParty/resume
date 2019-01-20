@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>图片在容器内水平垂直居中，容器宽高大于图片宽高</title>
+    <style>
+    .container {
+        height: 500px;
+        width: 880px;
+        background-color: grey;
+        text-align: center;
+    }
+
+    .container::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .container>img{
+        vertical-align: middle;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container"><img src="./images/ex7use.jpg" alt="ex7use"></div>
+</body>
+
+</html>
