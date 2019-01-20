@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tip三角</title>
+    <style>
+        body{
+            margin-top: 40px;
+        }
+        .tip{
+            width: 300px;
+            height: 200px;
+            margin-bottom: 40px;
+            border:1px solid #e4e4e4;
+            position: relative;
+        }
+        /*.triangle1::before{
+            content: '';//内容
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-left: 1px solid #000;
+            border-top: 1px solid #000;
+            background-color: #808080;
+            position: absolute;//定位，注意父
+            transform: rotate(45deg); //transform
+            top: -6px;
+            left: 16px;
+        }*/
+        .triangle1::before{
+            content: '';
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border-top: 10px solid #808080;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #808080;
+            position: absolute;
+            transform: rotate(45deg);
+            top: -10px;
+            left: 16px;
+        }
+        .triangle2::before{
+            content: '';
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border-top: 10px solid #ff0b0f;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #ff0b0f;
+            position: absolute;
+            transform: rotate(90deg);
+            top: -1px;
+            right: -1px;
+        }
+        .triangle3::before{
+            content: '';
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            border-top: 1px solid #e4e4e4;
+            border-left: 1px solid #e4e4e4;
+            position: absolute;
+            transform: rotate(45deg);
+            top:-9px;
+            left:17px;
+
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="tip triangle1"></div>
+    <div class="tip triangle2"></div>
+    <div class="tip triangle3"></div>
+</body>
+</html>
