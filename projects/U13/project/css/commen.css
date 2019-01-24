@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-size: 14px;
     background-color: #ffffff;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -12,4 +13,9 @@ ul{
 }
 .btn{
     cursor:pointer;
+}
+.clearfix::after {
+    content:"";
+    display:table;
+    clear: both;
 }

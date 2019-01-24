@@ -8,6 +8,7 @@
     @import url('./css/commen.css');
     </style>
     <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1030612_1duxrtj4dib.css">
     <style>
     #header {
         position: absolute;
@@ -98,8 +99,72 @@
     .btn>a:hover {
         background-color: #fec503;
     }
+    /*.section-title .section-title-into 对section中通用的部分进行设置*/
+    .section-title {
+        padding-top: 55px;
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
 
-    #services {}
+    .section-title-into {
+        color: #777;
+        font-style: italic;
+        font-size: 16px;
+    }
+    .section-title-p{
+
+        font-style: italic;
+        color: #777;
+    }
+    .section-title-h3{font-weight: 700;
+    }
+    #services{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #services>ul {
+        box-sizing: border-box;
+        float: left;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #services>ul>li {
+
+        display: inline-block;
+        box-sizing: border-box;
+        float: left;
+        padding: 20px;
+        width: 33.33%;
+        min-width: 256px;
+
+    }
+
+    #services>ul span {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: #fed136;
+        border: 1px solid #fed136;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    /*字体图标大小*/
+    #services>ul .iconfont {
+        font-size: 60px;
+    }
+
+    /*字体图标定位*/
+    #services>ul span::before {
+        position: absolute;
+        top: 7px;
+        left: 10px;
+    }
+
     </style>
 </head>
 
@@ -124,15 +189,74 @@
                 <a href="#services">告诉我们更多</a>
             </div>
         </section>
-        <section id="services">
-        </section>
+        <section id="services" class="clearfix">
+            <h2 class="section-title">SERVICES</h2>
+            <p class="section-title-into">Lorem ipsum dolor sit amet consectetur.</p>
+            <ul>
+                <li>
+                    <span class="iconfont icon-services-pig"></span>
+                    <h3 class="section-title-h3">E-Commerce</h3>
+                    <p class="section-title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+                <li>
+                    <span class="iconfont icon-services-pc"></span>
+                    <h3 class="section-title-h3">Responsive Design</h3>
+                    <p class="section-title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+                <li>
+                    <span class="iconfont icon-services-key"></span>
+                    <h3 class="section-title-h3">Web Security</h3>
+                    <p class="section-title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+            </ul>
+        </section class="clearfix">
         <section id="portfolio">
+            <h2 class="section-title">PORTFOLIO</h2>
+            <p class="section-title-into">Lorem ipsum dolor sit amet consectetur.</p>
+            <ul>
+                <li>
+                    <img src="./imgs/m01.jpg" alt="01">
+                    <h3 class="section-title-h3">Round Icons</h3>
+                    <p class="section-title-p">Graphic Design</p>
+                </li>
+                <li>
+                    <img src="./imgs/m02.jpg" alt="02">
+                    <h3 class="section-title-h3">Startup Framework</h3>
+                    <p class="section-title-p">Website Design</p>
+                </li>
+                <li>
+                    <img src="./imgs/m03.jpg" alt="03">
+                    <h3 class="section-title-h3">Treehouse</h3>
+                    <p class="section-title-p">Website Design</p>
+                </li>
+                <li>
+                    <img src="./imgs/m04.jpg" alt="04">
+                    <h3 class="section-title-h3">Golden</h3>
+                    <p class="section-title-p">Website Design</p>
+                </li>
+                <li>
+                    <img src="./imgs/m05.jpg" alt="05">
+                    <h3 class="section-title-h3">Escape</h3>
+                    <p class="section-title-p">Website Design</p>
+                </li>
+                <li>
+                    <img src="./imgs/m06.jpg" alt="06">
+                    <h3 class="section-title-h3">Dreams</h3>
+                    <p class="section-title-p">Website Design</p>
+                </li>
+            </ul>
         </section>
         <section id="about">
+            <h2 class="section-title">ABOUT</h2>
+            <p class="section-title-into">Lorem ipsum dolor sit amet consectetur.</p>
         </section>
         <section id="team">
+            <h2 class="section-title">OUR AMAZING TEAM</h2>
+            <p class="section-title-into">Lorem ipsum dolor sit amet consectetur.</p>
         </section>
         <section id="contact">
+            <h2 class="section-title">CONTACT US</h2>
+            <p class="section-title-into">Lorem ipsum dolor sit amet consectetur.</p>
         </section>
     </main>
     <footer id="footer">
