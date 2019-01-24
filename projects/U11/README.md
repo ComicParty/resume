@@ -60,13 +60,14 @@
 
 # 5.实现如下居中方式，并附上 Demo 链接
 <p align="center">
-    <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex5.jpg" alt="Sample"  width="340" height="150">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex5.jpg" alt="Sample"  width="440" height="150">
     <p align="center">
         <em>要求：大段文字在容器内水平垂直居中</em>
     </p>
 </p>
 
 [已完成-点击查看](https://comicparty.github.io/resume/projects/U11/ex5.html)
+
 # 6.实现如下居中方式，并附上 Demo 链接
 <p align="center">
     <img src="https://github.com/ComicParty/resume/blob/master/projects/U11/images/ex6.jpg" alt="Sample"  width="340" height="150">
