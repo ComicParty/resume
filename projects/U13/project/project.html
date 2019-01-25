@@ -8,163 +8,24 @@
     @import url('./css/commen.css');
     </style>
     <link rel="stylesheet" href="./css/project.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1030612_1duxrtj4dib.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1030612_5gomsf3yrx.css">
     <style>
-    #header {
-        position: absolute;
-        width: 100%;
+    /*#about >ul img:nth-child(odd){
+        float: right;
+    }*/
+    /* 奇数*/
+   
+    /*#about >ul li{
+        text-align: right;
     }
-
-    #header>.start {
-        font: 2em/1.5 "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-
-        padding: 30px;
-        float: left;
-    }
-
-    #header>.start>a {
-        color: #fed136;
-    }
-
-    #header>.nav {
+    
+    #about >ul li:nth-child(odd) img{
         float: right;
 
     }
-
-    #header>.nav>li {
+    #about >ul li:nth-child(even) img{
         float: left;
-    }
-
-    #header>.nav a {
-        color: #ffffff;
-        display: block;
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-right: 30px;
-        margin-top: 28px;
-    }
-
-    #header>.nav a:hover {
-        color: #fdcf48;
-    }
-
-    #header div:last-child {
-        height: 200px;
-        width: 200px;
-    }
-
-    #main {
-        width: 100%;
-    }
-
-    #main>#intro {
-        width: 100%;
-        background: url('http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg') no-repeat;
-        background-size: cover;
-        padding: 220px 0;
-        height: 760px;
-        box-sizing: border-box;
-        overflow: hidden;
-        color: #fff;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #main>#intro>h1:first-of-type {
-        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-style: italic;
-        font-size: 40px;
-        line-height: 40px;
-    }
-
-    #main>#intro>h1:last-of-type {
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        font-size: 75px;
-        line-height: 75px;
-
-    }
-
-    .btn>a {
-        display: inline-block;
-        color: #fff;
-        background-color: #fed136;
-        border-color: #fed136;
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        border-radius: 3px;
-        font-size: 18px;
-        padding: 20px 40px;
-    }
-
-    .btn>a:hover {
-        background-color: #fec503;
-    }
-    /*.section-title .section-title-into 对section中通用的部分进行设置*/
-    .section-title {
-        padding-top: 55px;
-        font-size: 40px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
-
-    .section-title-into {
-        color: #777;
-        font-style: italic;
-        font-size: 16px;
-    }
-    .section-title-p{
-
-        font-style: italic;
-        color: #777;
-    }
-    .section-title-h3{font-weight: 700;
-    }
-    #services{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    #services>ul {
-        box-sizing: border-box;
-        float: left;
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    #services>ul>li {
-
-        display: inline-block;
-        box-sizing: border-box;
-        float: left;
-        padding: 20px;
-        width: 33.33%;
-        min-width: 256px;
-
-    }
-
-    #services>ul span {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        background: #fed136;
-        border: 1px solid #fed136;
-        border-radius: 50%;
-        position: relative;
-    }
-
-    /*字体图标大小*/
-    #services>ul .iconfont {
-        font-size: 60px;
-    }
-
-    /*字体图标定位*/
-    #services>ul span::before {
-        position: absolute;
-        top: 7px;
-        left: 10px;
-    }
-
+    }*/
     </style>
 </head>
 
@@ -209,46 +70,101 @@
                     <p class="section-title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </li>
             </ul>
-        </section class="clearfix">
-        <section id="portfolio">
+        </section>
+        <section id="portfolio" class="clearfix">
             <h2 class="section-title">PORTFOLIO</h2>
             <p class="section-title-into">Lorem ipsum dolor sit amet consectetur.</p>
             <ul>
                 <li>
-                    <img src="./imgs/m01.jpg" alt="01">
-                    <h3 class="section-title-h3">Round Icons</h3>
-                    <p class="section-title-p">Graphic Design</p>
+                    <div class="portfolio-card">
+                        <div class="mask iconfont"></div>
+                        <a class="img-z-index" href="#">
+                               <img  src="./imgs/m01.jpg" alt="01">
+                           </a>
+                        <h3 class="section-title-h3">Round Icons</h3>
+                        <p class="section-title-p">Graphic Design</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="./imgs/m02.jpg" alt="02">
-                    <h3 class="section-title-h3">Startup Framework</h3>
-                    <p class="section-title-p">Website Design</p>
+                    <div class="portfolio-card">
+                        <div class="mask iconfont"></div>
+                        <a href="#">
+                            <img src="./imgs/m02.jpg" alt="02">
+                        </a>
+                        <h3 class="section-title-h3">Escape</h3>
+                        <p class="section-title-p">Website Design</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="./imgs/m03.jpg" alt="03">
-                    <h3 class="section-title-h3">Treehouse</h3>
-                    <p class="section-title-p">Website Design</p>
+                    <div class="portfolio-card">
+                        <div class="mask iconfont"></div>
+                        <a href="#">
+                            <img src="./imgs/m03.jpg" alt="03">
+                        </a>
+                        <h3 class="section-title-h3">Treehouse</h3>
+                        <p class="section-title-p">Website Design</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="./imgs/m04.jpg" alt="04">
-                    <h3 class="section-title-h3">Golden</h3>
-                    <p class="section-title-p">Website Design</p>
+                    <div class="portfolio-card">
+                        <div class="mask iconfont"></div>
+                        <img src="./imgs/m04.jpg" alt="04">
+                        <h3 class="section-title-h3">Golden</h3>
+                        <p class="section-title-p">Website Design</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="./imgs/m05.jpg" alt="05">
-                    <h3 class="section-title-h3">Escape</h3>
-                    <p class="section-title-p">Website Design</p>
+                    <div class="portfolio-card">
+                        <div class="mask iconfont"></div>
+                        <img src="./imgs/m05.jpg" alt="05">
+                        <h3 class="section-title-h3">Escape</h3>
+                        <p class="section-title-p">Website Design</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="./imgs/m06.jpg" alt="06">
-                    <h3 class="section-title-h3">Dreams</h3>
-                    <p class="section-title-p">Website Design</p>
+                    <div class="portfolio-card">
+                        <div class="mask iconfont"></div>
+                        <img src="./imgs/m06.jpg" alt="06">
+                        <h3 class="section-title-h3">Dreams</h3>
+                        <p class="section-title-p">Website Design</p>
+                    </div>
                 </li>
             </ul>
         </section>
-        <section id="about">
+        <section id="about" class="clearfix">
             <h2 class="section-title">ABOUT</h2>
             <p class="section-title-into">Lorem ipsum dolor sit amet consectetur.</p>
+            <ul class="clearfix">
+                <li class="clearfix">
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="2009-2011">
+                    <h3>2009-2011</h3>
+                    <h3>Our Humble Beginnings</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </li>
+                <li class="clearfix">
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/2.jpg" alt="2011">
+                    <h3>MARCH 2011</h3>
+                    <h3>An Agency is Born</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </li>
+                <li class="clearfix">
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/3.jpg" alt="2012">
+                    <h3>DECEMBER 2012</h3>
+                    <h3>Transition to Full Service</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </li>
+                <li class="clearfix">
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/4.jpg" alt="2014">
+                    <h3>JULY 2014</h3>
+                    <h3>Phase Two Expansion</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </li>
+                <li class="clearfix">
+                    <div class="last-story">
+                        <p>BE PART OF OUR STORY!</p>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section id="team">
             <h2 class="section-title">OUR AMAZING TEAM</h2>

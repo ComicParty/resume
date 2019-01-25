@@ -1,21 +1,31 @@
-body{
+body {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #ffffff;
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     padding: 0;
     list-style: none;
 }
-.btn{
-    cursor:pointer;
+
+.btn {
+    cursor: pointer;
 }
+
 .clearfix::after {
-    content:"";
-    display:table;
+    content: "";
+    display: table;
     clear: both;
+}
+
+#portfolio,
+#team,
+#footer {
+    background-color: #f7f7f7;
 }
