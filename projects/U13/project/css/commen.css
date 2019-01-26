@@ -29,3 +29,37 @@ ul {
 #footer {
     background-color: #f7f7f7;
 }
+section>h2{
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*通用的实体字符*/
+    .footer-li-iconfont {
+        display: inline-block;
+    }
+
+    .footer-a-icontont {
+        display: inline-block;
+        background: black;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer-a-icontont:hover {
+        background: #fed136;
+    }
+
+    .relation-by .iconfont {
+        color: #ffffff;
+    }
+
+    .footer-position a {
+        color: #fed136;
+    }
+    .footer-position a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-position>.convention>li {
+        display: inline-block;
+    }

@@ -1,339 +1,425 @@
 #header {
-        position: absolute;
-        width: 100%;
-    }
+    position: absolute;
+    width: 100%;
+}
 
-    #header>.start {
-        font: 2em/1.5 "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+#header>.start {
+    font: 2em/1.5 "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 
-        padding: 30px;
-        float: left;
-    }
+    padding: 30px;
+    float: left;
+}
 
-    #header>.start>a {
-        color: #fed136;
-    }
+#header>.start>a {
+    color: #fed136;
+}
 
-    #header>.nav {
-        float: right;
+#header>.nav {
+    float: right;
 
-    }
+}
 
-    #header>.nav>li {
-        float: left;
-    }
+#header>.nav>li {
+    float: left;
+}
 
-    #header>.nav a {
-        color: #ffffff;
-        display: block;
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-right: 30px;
-        margin-top: 28px;
-    }
+#header>.nav a {
+    color: #ffffff;
+    display: block;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-right: 30px;
+    margin-top: 28px;
+}
 
-    #header>.nav a:hover {
-        color: #fdcf48;
-    }
+#header>.nav a:hover {
+    color: #fdcf48;
+}
 
-    #header div:last-child {
-        height: 200px;
-        width: 200px;
-    }
+#header div:last-child {
+    height: 200px;
+    width: 200px;
+}
+
 /*中间*/
-    #main {
-        width: 100%;
-    }
+#main {
+    width: 100%;
+}
 
-    #main>#intro {
-        width: 100%;
-        background: url('http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg') no-repeat;
-        background-size: cover;
-        padding: 220px 0;
-        height: 760px;
-        box-sizing: border-box;
-        overflow: hidden;
-        color: #fff;
-        text-align: center;
-        margin: 0 auto;
-    }
+#main>#intro {
+    width: 100%;
+    background: url('http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg') no-repeat;
+    background-size: cover;
+    padding: 220px 0;
+    height: 760px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
 
-    #main>#intro>h1:first-of-type {
-        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-style: italic;
-        font-size: 40px;
-        line-height: 40px;
-    }
+#main>#intro>h1:first-of-type {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+}
 
-    #main>#intro>h1:last-of-type {
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        font-size: 75px;
-        line-height: 75px;
+#main>#intro>h1:last-of-type {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
 
-    }
+}
 
-    .btn>a {
-        display: inline-block;
-        color: #fff;
-        background-color: #fed136;
-        border-color: #fed136;
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        border-radius: 3px;
-        font-size: 18px;
-        padding: 20px 40px;
-    }
+.btn>a {
+    display: inline-block;
+    color: #fff;
+    background-color: #fed136;
+    border-color: #fed136;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
 
-    .btn>a:hover {
-        background-color: #fec503;
-    }
+.btn>a:hover {
+    background-color: #fec503;
+}
 
-    /*.section-title .section-title-into 对section中通用的部分进行设置*/
-    .section-title {
-        padding-top: 55px;
-        font-size: 40px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
+/*.section-title .section-title-into 对section中通用的部分进行设置*/
+.section-title {
+    padding-top: 55px;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
 
-    .section-title-into {
-        color: #777;
-        font-style: italic;
-        font-size: 16px;
-    }
+.section-title-into {
+    color: #777;
+    font-style: italic;
+    font-size: 16px;
+}
 
-    .section-title-p {
+.section-title-p {
 
-        font-style: italic;
-        color: #777;
-    }
+    font-style: italic;
+    color: #777;
+}
 
-    .section-title-h3 {
-        font-weight: 700;
-    }
+.section-title-h3 {
+    font-weight: 700;
+}
 
-    #services {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+#services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-    #services>ul {
-        box-sizing: border-box;
-        float: left;
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+#services>ul {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
-    #services>ul>li {
+#services>ul>li {
 
-        display: inline-block;
-        box-sizing: border-box;
-        float: left;
-        padding: 20px;
-        width: 33.33%;
-        min-width: 256px;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    padding: 20px;
+    width: 33.33%;
+    min-width: 256px;
 
-    }
+}
 
-    #services>ul span {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        background: #fed136;
-        border: 1px solid #fed136;
-        border-radius: 50%;
-        position: relative;
-    }
+#services>ul span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #fed136;
+    border: 1px solid #fed136;
+    border-radius: 50%;
+    position: relative;
+}
 
-    /*字体图标大小*/
-    #services>ul .iconfont {
-        font-size: 60px;
-    }
+/*字体图标大小*/
+#services>ul .iconfont {
+    font-size: 60px;
+}
 
-    /*字体图标定位*/
-    #services>ul span::before {
-        position: absolute;
-        top: 7px;
-        left: 10px;
-    }
+/*字体图标定位*/
+#services>ul span::before {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
 
 
-    #portfolio>ul {
+#portfolio>ul {
 
-        float: left;
-    }
+    float: left;
+}
 
-    #portfolio>ul>li {
-        display: inline-block;
-        background: #ffffff;
-        margin: 20px;
-    }
+#portfolio>ul>li {
+    display: inline-block;
+    background: #ffffff;
+    margin: 20px;
+}
 
-    #portfolio>ul>li .portfolio-card {
-        height: 400px;
-        width: 400px;
-        position: relative;
-    }
+#portfolio>ul>li .portfolio-card {
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
 
-    #portfolio .portfolio-card>p {
-        margin-top: 0px;
-    }
+#portfolio .portfolio-card>p {
+    margin-top: 0px;
+}
 
-    #portfolio .portfolio-card>h3 {
-        margin: 5px 0;
-    }
+#portfolio .portfolio-card>h3 {
+    margin: 5px 0;
+}
 
-    #portfolio .portfolio-card img {
-        width: 100%;
-        height: 300px;
-    }
+#portfolio .portfolio-card img {
+    width: 100%;
+    height: 300px;
+}
 
-    #portfolio .portfolio-card .mask {
-        position: absolute;
-        height: 300px;
-        width: 400px;
-        background: rgba(254, 209, 54, .9);
-        z-index: 2;
-        opacity: 0;
-        transition: all ease .5s;
-    }
+#portfolio .portfolio-card .mask {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    background: rgba(254, 209, 54, .9);
+    z-index: 2;
+    opacity: 0;
+    transition: all ease .5s;
+}
 
-    #portfolio .portfolio-card .mask::after {
-        position: absolute;
-        content: '\e612';
-        color: #ffffff;
-        top: 100px;
-        right: 165px;
-        font-size: 66px;
-        cursor: pointer;
+#portfolio .portfolio-card .mask::after {
+    position: absolute;
+    content: '\e612';
+    color: #ffffff;
+    top: 100px;
+    right: 165px;
+    font-size: 66px;
+    cursor: pointer;
 
-    }
+}
 
-    #portfolio .portfolio-card>.mask .img-z-index {
-        z-index: 1;
-    }
+#portfolio .portfolio-card>.mask .img-z-index {
+    z-index: 1;
+}
 
-    #portfolio .portfolio-card .mask:hover {
-        opacity: 1;
-    } #about{
-        min-width: 848px;
-    }
-    /*奇数*/
-    #about>ul>li:nth-child(odd) {
-        box-sizing: border-box;
-        float: right;
-        text-align: right;
-        padding-right: calc(50% - 54px);
-        padding-left: 100px;
-    }
+#portfolio .portfolio-card .mask:hover {
+    opacity: 1;
+}
 
-    #about>ul li:nth-child(odd) img {
-        float: right;
-        margin-left: 20px;
+#about {
+    min-width: 848px;
+}
 
-    }
+/*奇数*/
+#about>ul>li:nth-child(odd) {
+    box-sizing: border-box;
+    float: right;
+    text-align: right;
+    padding-right: calc(50% - 54px);
+    padding-left: 100px;
+}
 
-    /*偶数*/
-    #about>ul>li:nth-child(even) {
-        box-sizing: border-box;
-        float: left;
-        text-align: left;
-        padding-left: calc(50% - 54px);
+#about>ul li:nth-child(odd) img {
+    float: right;
+    margin-left: 20px;
 
-        padding-right: 100px;
-    }
+}
 
-    #about>ul li:nth-child(even) img {
-        float: left;
-        margin-right: 20px;
-    }
+/*偶数*/
+#about>ul>li:nth-child(even) {
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+    padding-left: calc(50% - 54px);
 
-    /*img 通用属性*/
-    #about>ul img,
-    #about .last-story {
-        border-radius: 50%;
-        border: 4px solid lightblue;
-        height: 100px;
-        width: 100px;
-        margin-bottom: 150px;
-    }
+    padding-right: 100px;
+}
 
-    #about>ul h3 {
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    /* 连线*/
-    #about >ul >li{
-        position: relative;
-    }
-    #about >ul>li::before{
-        position: absolute;
-        content: '';
-        height: 60%;
-        width: 4px;
-        background: lightblue;
-        left: calc( 50% - 4px);
-        bottom: -2px;
-    }
-    #about>ul>li .last-story{
+#about>ul li:nth-child(even) img {
+    float: left;
+    margin-right: 20px;
+}
 
-        background: #fed136;
-    }
-    #about>ul>li:last-child p{
-        margin-top: 29px;
-        margin-bottom: 0;line-height:18px
-    }
-    #about>ul>li:last-child::before{
-opacity: 0;
-    }
+/*img 通用属性*/
+#about>ul img,
+#about .last-story {
+    border-radius: 50%;
+    border: 4px solid lightblue;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 150px;
+}
+
+#about>ul h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* 连线*/
+#about>ul>li {
+    position: relative;
+}
+
+#about>ul>li::before {
+    position: absolute;
+    content: '';
+    height: 60%;
+    width: 4px;
+    background: lightblue;
+    left: calc(50% - 4px);
+    bottom: -2px;
+}
+
+#about>ul>li .last-story {
+
+    background: #fed136;
+}
+
+#about>ul>li:last-child p {
+    margin-top: 29px;
+    margin-bottom: 0;
+    line-height: 18px
+}
+
+#about>ul>li:last-child::before {
+    opacity: 0;
+}
+
+#team .member {
+    float: left;
+    width: 33.33%
+}
+
+#team .member img {
+    border: solid 7px #ffffff;
+    border-radius: 50%;
+}
+
+#team .member h3 {
+    margin-bottom: 0;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#team .member p {
+    margin-top: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+#team>p:first-of-type {
+    margin-bottom: 40px;
+}
+
+#team>p:last-of-type {
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 160px;
+}
+
+
+
+
+
+
+#contact {
+    background: url('http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png') no-repeat;
+    background-color: #222222;
+    padding: 105px 165px;
+}
+
+#contact>h2 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 1200;
+    color: #ffffff;
+}
+
+#contact>form>div>[placeholder] {
+    font-weight: 700;
+}
+
+/*布局*/
+#contact>form>.people-info {
+    float: left;
+    width: 50%;
+    min-width: 400px;
+}
+
+#contact>form>.people-message {
+    float: left;
+    width: 50%;
+    min-width: 400px;
+}
+
+#contact .people-submit {
+    display: inline-block;
+}
+
+
+
+#contact>form>.people-info>input {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+#contact>form>.people-message>textarea {
+    margin: 20px 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 250px;
+    padding: 20px;
+    width: 80%;
+
+}
+
+#contact .people-submit>button {
+    padding: 20px 40px;
+    background-color: #fed136;
+    color: #fff;
+    border-color: #fed136;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 200px;
+    margin-left: 200px;
+
+}
+
 /*尾部*/
 
-    #footer {
-        padding: 25px 0;
-    }
+#footer {
+    padding: 25px 0;
+}
 
-    #footer .footer-position {
-        display: inline-block;
-        padding: 0 40px;
-    }
+#footer .footer-position {
+    display: inline-block;
+    padding: 0 40px;
+}
 
-    #footer .footer-li-iconfont {
-        display: inline-block;
-    }
 
-    #footer .footer-a-icontont {
-        display: inline-block;
-        background: black;
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-    }
-
-    #footer .footer-a-icontont:hover {
-        background: #fed136;
-    }
-
-    #footer .footer-position .iconfont {
-        color: white;
-    }
-
-    #footer>.footer-position .convention a {
-        color: #fed136;
-    }
-
-    #footer>.footer-position .convention a:hover {
-        text-decoration: underline;
-    }
-
-    #footer>.footer-position>.convention>li {
-        display: inline-block;
-    }
-
-    .icon-twitter,
-    .icon-linkedin,
-    .icon-facebook {
-        font-size: 25px;
-        line-height: 1.5;
-    }
+.icon-twitter,
+.icon-linkedin,
+.icon-facebook {
+    font-size: 25px;
+    line-height: 1.5;
+}
