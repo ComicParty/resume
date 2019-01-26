@@ -28,6 +28,13 @@ CSRF我的理解就是，有人在用户不知情的情况下，使用网站存�
 
 # 7.实现如下表单,附上预览地址。其中性别和取向是单选，爱好是多选
 
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U5/imgs/form.jpg" alt="Sample"  width="496" height="376">
+    <p align="center">
+        <em>form</em>
+    </p>
+</p>
+
 [github Pages-点击查看](https://comicparty.github.io/resume/projects/U5/exercise7.html)
 
 # 8. label 有什么作用？如何使用？

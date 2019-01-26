@@ -220,6 +220,7 @@
     } #about{
         min-width: 848px;
     }
+    /*奇数*/
     #about>ul>li:nth-child(odd) {
         box-sizing: border-box;
         float: right;
@@ -288,3 +289,51 @@
 opacity: 0;
     }
 /*尾部*/
+
+    #footer {
+        padding: 25px 0;
+    }
+
+    #footer .footer-position {
+        display: inline-block;
+        padding: 0 40px;
+    }
+
+    #footer .footer-li-iconfont {
+        display: inline-block;
+    }
+
+    #footer .footer-a-icontont {
+        display: inline-block;
+        background: black;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    #footer .footer-a-icontont:hover {
+        background: #fed136;
+    }
+
+    #footer .footer-position .iconfont {
+        color: white;
+    }
+
+    #footer>.footer-position .convention a {
+        color: #fed136;
+    }
+
+    #footer>.footer-position .convention a:hover {
+        text-decoration: underline;
+    }
+
+    #footer>.footer-position>.convention>li {
+        display: inline-block;
+    }
+
+    .icon-twitter,
+    .icon-linkedin,
+    .icon-facebook {
+        font-size: 25px;
+        line-height: 1.5;
+    }
