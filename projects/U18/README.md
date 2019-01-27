@@ -45,18 +45,31 @@ console.log("2"+"4");
 > 24
 ```
 错：先输出 字符"2"，再输出字符"4"
-对：输出字符串“24”
+
+对：输出 拼接的字符串 “24”
 ```
 console.log(2+"4"); 
 > 24
 ```
 错：先输出 数字2，再输出 字符4
-对：输出字符串“24”
+
+对：输出 拼接的字符串“24”
+
+<p align="center">
+    <img src="https://github.com/ComicParty/resume/blob/master/projects/U18/imgs/console.jpg" alt="Sample"  width="249" height="451">
+    <p align="center">
+        <em>chrome console</em>
+    </p>
+</p>
+
 ```
 console.log(+"4"); 
 > 4
 ```
-输出4这个字符
+错：输出4这个字符
+
+输出 数字4
+
 
 ## 4.
 相等运算符（==）比较两个值是否相等，
