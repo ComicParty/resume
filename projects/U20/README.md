@@ -62,9 +62,9 @@ function getInfo(name, age, sex){
     getInfo('男');
 ```
 
-[代码](https://github.com/ComicParty/resume/tree/master/projects/U20/函数参数与 默认的argument研究.js)
+[代码](https://github.com/ComicParty/resume/tree/master/projects/U20/函数参数与%20默认的argument研究.js)
 
-[图片](https://github.com/ComicParty/resume/tree/master/projects/U20/配套图片-函数参数与 默认的argument研究.jpg)
+[图片](https://github.com/ComicParty/resume/tree/master/projects/U20/配套图片-函数参数与%20默认的argument研究.jpg)
 ### 4. 写一个函数，返回参数的平方和？
 
 ```
