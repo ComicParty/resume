@@ -350,6 +350,33 @@ console.log(a)  //1
 console.log(c)  //{ name: 'jirengu', age: 4 }
 ```
 16.写一篇关于作用域链的博客，不少于200字，附上博客链接
-[]()
+[作用域链](https://github.com/ComicParty/resume/tree/master/projects/U20/作用域链.md)
 17.写一个深拷贝函数。
+
+```
+//浅拷贝
+function shallowCopy(oldObj) {
+        var newObj = {};
+        for(var i in oldObj) {
+            if(oldObj.hasOwnProperty(i)) {
+                newObj[i] = oldObj[i];
+            }
+        }
+        return newObj;
+    }
+
+//深拷贝
+
+    function deepCopy(oldObj) {
+        var newObj = {};
+        for(var key in oldObj) {
+            if(typeof oldObj[key] === 'object') {
+                newObj[key] = deepCopy(oldObj[key]);
+            }else{
+                newObj[key] = oldObj[key];
+            }
+        }
+        return newObj;
+    }
+```
 
