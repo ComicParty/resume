@@ -273,7 +273,7 @@ fn() //输出多少
 ```
 输出`1`,步骤与 11题一样，但是这里的 fn2()没有在函数中，所以他找的 变量a是和他同一环境中的`var a = 1;`
 
-13.如下代码的输出？为什么？
+### 13.如下代码的输出？为什么？
 
 ```
 var a = 1;
@@ -349,9 +349,13 @@ f1(c.age) //c = { name: 'jirengu', age: 3 } 传入的是 值
 console.log(a)  //1 
 console.log(c)  //{ name: 'jirengu', age: 4 }
 ```
-16.写一篇关于作用域链的博客，不少于200字，附上博客链接
+### 16.写一篇关于作用域链的博客，不少于200字，附上博客链接
+
 [作用域链](https://github.com/ComicParty/resume/tree/master/projects/U20/作用域链.md)
-17.写一个深拷贝函数。
+
+### 17.写一个深拷贝函数。
+
+[引用类型-JRG](http://book.jirengu.com/fe/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/Javascript/%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.html)
 
 ```
 //浅拷贝
@@ -378,5 +382,19 @@ function shallowCopy(oldObj) {
         }
         return newObj;
     }
+```
+
+[JSON-深拷贝](http://book.jirengu.com/fe/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/Javascript/json.html)
+
+```
+var obj = {
+    name: 'hunger',
+    age: 3,
+    friends: ['aa', 'bb', 'cc']
+}
+
+var obj2 = JSON.parse(JSON.stringify(obj))
+obj.age = 4
+console.log(obj2.age)
 ```
 
