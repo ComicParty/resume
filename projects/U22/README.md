@@ -40,15 +40,27 @@ var str = 'C:\Users\Document\node\index.js'
 console.log(str.length)
 ```
 如何声明 str 让 `console.log(str)`输出 `C:\Users\Document\node\index.js`?
+答：
+输出 27
+对`\`进行转义，使用`\\`
+```
+var str = 'C:\\Users\\Document\\node\\index.js';
+console.log(str.length);        //31
+console.log(str);       //C:\Users\Document\node\index.js
+```
 ### 3.对于字符串
 `var str = 'hello jirengu.com'`
 写出以下操作的代码范例
 1. 获取 str 下标为3的字符
+    1.`var str3 = str[3];`
 2. 获取 str 下标为4的字符的 Ascii 码
+    1.
 3. 截取字符g到末尾的字符串
+    1.
 4. 从字符o开始，截取长为4个字符的字符串
+    1.
 5. 获取第一个 l的下标
-
+    1.
 
 ### 4.写一个函数，生成一个随机 IP 地址，一个合法的 IP 地址为 0.0.0.0~255.255.255.255。
 ```
