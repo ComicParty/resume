@@ -49,31 +49,66 @@ console.log(str.length);        //31
 console.log(str);       //C:\Users\Document\node\index.js
 ```
 ### 3.对于字符串
-`var str = 'hello jirengu.com'`
+`var str = 'hello jirengu.com';`
 写出以下操作的代码范例
+
+```
 1. 获取 str 下标为3的字符
-    1.`var str3 = str[3];`
+    1. `str[3];`        //下标法
+    2. `str.charAt(3);`  //
 2. 获取 str 下标为4的字符的 Ascii 码
-    1.
+    1.`str.charCodeAt(4);`
 3. 截取字符g到末尾的字符串
-    1.
+    1.`str.slice(11,str.length);`       //"gu.com"
+    2.`str.slice(str.indexOf('g'),str.length)` //"gu.com"
 4. 从字符o开始，截取长为4个字符的字符串
-    1.
+    1. `str.substring(str.indexOf('o'),str.indexOf('o')+4);      //"o ji"`
+    2. `str.substr(str.indexOf('o'),4);                     //"o ji"`  
+    3. `str.slice(str.indexOf('o'),str.indexOf('o')+4);     //"o ji"`
 5. 获取第一个 l的下标
-    1.
+    1.`str.search('l');         //2`
+
+```
 
 ### 4.写一个函数，生成一个随机 IP 地址，一个合法的 IP 地址为 0.0.0.0~255.255.255.255。
+
 ```
 function getRandIP(){
-  //补全
+//补全
+  var IP=0;
+  var IParry =[];
+    
+  for(var i = 0; i < 4; i++){
+    var IPnumber = Math.floor(Math.random() * (255 - 0 + 1))+0;
+    IParry[i]= IPnumber;
+  }
+  var IParryJoin = IParry.join('.');
+
+  return IParryJoin;
 }
 var ip = getRandIP()
 console.log(ip) // 10.234.121.45
 ```
+
+ [参考链接](https://wangdoc.com/javascript/stdlib/math.html#mathrandom)
+ 
 ### 5.写一个函数，生成一个随机颜色字符串，合法的颜色为#000000~ #ffffff。
 
 ```
 function getRandColor(){
+//补全
+  var color = '0123456789abcdf';
+  color = new String(color);
+  
+  var RandColor = '#';
+  for(var i = 0; i<6; i++){
+    var k = Math.floor(Math.random()*(color.length - 0 +1)) + 0;
+    
+    var rand = color[k];
+    RandColor += rand;
+  }
+  
+  return RandColor;
 }
 var color = getRandColor()
 console.log(color)   // #3e2f1b
