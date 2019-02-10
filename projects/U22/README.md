@@ -115,14 +115,36 @@ console.log(color)   // #3e2f1b
 ```
 
 ### 6.写一个函数，返回从min到max之间的 随机整数，包括min不包括max 。
+
+```
+function randMinMax(min,max){
+  return Math.floor(Math.random()*(max-min)+min);     
+}
+```
+
 ### 7.写一个函数，生成一个长度为 n 的随机字符串，字符串字符的取值范围包括0到9，a到 z，A到Z。
+
 ```
 function getRandStr(len){
   //补全函数
+  var str = "0123456789zbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var strLen = str.length;
+  var ranArr = '';
+  
+  for(var i = 0 ; i < len ; i++){
+    var rand = Math.floor(Math.random()*(strLen - 0 )+ 0);
+    //因为这里strLen比 str的下标大1，所以不需要加一了
+    //简单点就是 strLen(不含)
+   ranArr += str[rand];
+  }
+  
+  return ranArr;
 }
 var str = getRandStr(10); // 0a3iJiRZap
+
 ```
 ### 8.写一个函数，参数为时间对象毫秒数的字符串格式，返回值为字符串。假设参数为时间对象毫秒数t，根据t的时间分别返回如下字符串：
+
 * 刚刚（ t 距当前时间不到1分钟时间间隔）
 * 3分钟前 (t距当前时间大于等于1分钟，小于1小时)
 * 8小时前 (t 距离当前时间大于等于1小时，小于24小时)
@@ -130,10 +152,45 @@ var str = getRandStr(10); // 0a3iJiRZap
 * 2个月前 (t 距离当前时间大于等于30天小于12个月)
 * 8年前 (t 距离当前时间大于等于12个月)
 
-```function friendlyDate(time){
+思路：
+使用switch语句， 大于等于 就用 与(&&) 判断
+
+```
+function friendlyDate(time){
+  //补全
+  var timeNumber = Number(time);
+  var nowTime = (new Date()).valueOf();
+
+  var justNow = 60*100;
+  var th1 =60*justNow;
+  var th24 = 24*th1;
+  var day30 = 30*th24; 
+  var month12 = 12*day30;
+
+  var nowJustNow = nowTime - justNow;
+  var nowTh1 = nowTime - th1;
+  var nowTh24 = nowTime - th24;
+  var nowDay30 = nowTime - day30; 
+  var nowMonth12 = nowTime - month12;
+
+    if (nowMonth12 >= timeNumber) {
+        console.log('t 距离当前时间大于等于12个月');
+    }else if(nowDay30 >= timeNumber && timeNumber > nowMonth12){
+        console.log('t 距离当前时间大于等于30天小于12个月');
+    }else if(nowTh24 >= timeNumber && timeNumber > nowDay30){
+        console.log('t 距离当前时间大于等于24小时，小于30天');
+    }else if(nowTh1 >= timeNumber && timeNumber > nowTh24){
+        console.log('t 距离当前时间大于等于1小时，小于24小时');
+    }else if(nowJustNow >= timeNumber && timeNumber > nowTh1){
+        console.log('t距当前时间大于等于1分钟，小于1小时');
+    }else if(timeNumber > nowJustNow){
+        console.log('t 距当前时间不到1分钟时间间隔');
+    } 
 }
-var str = friendlyDate( '1484286699422' ) //  1分钟前（以当前时间为准）
-var str2 = friendlyDate('1483941245793') //4天前（以当前时间为准）
+var str = friendlyDate( '1484286699422' ); //  1分钟前（以当前时间为准）
+var str2 = friendlyDate((new Date()).valueOf()-6000); 
+var str3 = friendlyDate((new Date()).valueOf()-5999); 
+var str4 = friendlyDate((new Date()).valueOf()-600); 
 ```
 ### 9.实现一个reduce函数，作用和原生的reduce类似下面的例子。
 Ex：
@@ -142,8 +199,43 @@ Ex：
              return memo + num; 
              }, 0); => 6
 ```
+
+答：
+
+```
+function reduce(v1){
+  var sum = 0;
+  for(var i =0; i< v1.length; i++){
+    sum += v1[i];
+  }
+  return sum;
+}
+```
+
 ### 10.实现一个flatten函数，将一个嵌套多层的数组 array（数组） (嵌套可以是任何层数)转换为只有一层的数组，数组中元素仅基本类型的元素或数组，不存在循环引用的情况。
 Ex:：`flatten([1, [2], [3, [[4]]]]) => [1, 2, 3, 4];`
+答：
 
-
+```
+  
+  function flatten(v1){
+    var arr = []; //因为要把这个变量放在flatten()函数里面，我不得不再写一个函数包裹
+    //为了 多次在外部使用这个函数，所以arr变量放 在 函数里面
+    
+    function tile(v1){
+        for(var i = 0 ; i< v1.length; i++){
+          if(Array.isArray(v1[i])){
+            tile(v1[i]);
+            //return; //整个函数结束,不能使用 
+            continue;
+          }
+          arr.push(v1[i]);
+        }
+    }
+    tile(v1);
+    return arr;
+  }
+  
+  flatten([1, [2], [3, [[4]]]]);
+```
 
