@@ -1,6 +1,27 @@
 ### 1. 什么是贪婪模式和非贪婪模式？
-
+贪婪模式：默认情况下都是最大可能匹配 ，匹配直到下一个字符不满足匹配规则为止。
+非贪婪模式：一旦条件满足，就不再往下匹配。
 ### 2. 写一个函数isValidUsername(str)，判断用户输入的是不是合法的用户名（长度6-20个字符，只能包括字母、数字、下划线）。
+
+```
+  function isValidUsername(str){
+    var lengBool = str.length < 6 | str.length > 20;
+    if(lengBool){
+      return(console.log("长度错误"));
+    }
+    
+    var WBool = /\W/.test(str);
+    if(WBool){
+      return(console.log("只能包括字母、数字、下划线"));
+    }
+    
+    return '合法';
+    
+  }
+  //isValidUsername('a'); //长度错误
+  //isValidUsername('afds4afds1a152f'); //"合法"
+  //isValidUsername('afds4afds1a152f='); //VM1097:9 只能包括字母、数字、下划线
+```
 
 ### 3. 写一个函数isPhoneNum(str)，判断用户输入的是不是手机号。
 下面的函数有很高的兼容性：
@@ -24,9 +45,10 @@ isPhoneNum('16525468521');
 
 ```
 function trim(str){
-  str.replace(/^\s+|\s+$/g,'');
+  return str.replace(/^\s+|\s+$/g,'');
 }
-trim('  #id div.class  ');
+var b = trim('  #id div.class  ');
+b;
 ```
 
 ### 5. \d，\w，\s，[a-zA-Z0-9]，\b，.，*，+，?，x{3}，^，$分别是什么?
