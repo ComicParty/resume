@@ -40,7 +40,20 @@ isPhoneNum('165');
 isPhoneNum('16525468521');
 ```
 
-### 4. 写一个函数trim(str)，去除字符串两边的空白字符。
+### 4. 写一个函数isEmail(str)，判断用户输入的是不是邮箱。
+```
+  function isEmail(str){
+    var regEx = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+    if(regEx.test(str)){
+       return 'OK的';
+    }
+    return '假邮箱';
+  }
+  isEmail('2');//假邮箱
+  //isEmail('2@b.co'); //OK的
+```
+
+### 5.写一个函数trim(str)，去除字符串两边的空白字符。
 [参考链接](https://wangdoc.com/javascript/stdlib/regexp.html#stringprototypereplace)
 
 ```
@@ -51,7 +64,7 @@ var b = trim('  #id div.class  ');
 b;
 ```
 
-### 5. \d，\w，\s，[a-zA-Z0-9]，\b，.，*，+，?，x{3}，^，$分别是什么?
+### 6. \d，\w，\s，[a-zA-Z0-9]，\b，.，*，+，?，x{3}，^，$分别是什么?
 * \d 匹配0-9之间的任一数字，相当于[0-9]。
 * \w 匹配任意的字母、数字和下划线，相当于[A-Za-z0-9_]。
 * \s 匹配空格（包括换行符、制表符、空格符等），相等于[ \t\r\n\v\f]。
