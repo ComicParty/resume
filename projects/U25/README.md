@@ -10,8 +10,11 @@
 <script>
 //你的代码
 </script>
+
+[点击查看](https://comicparty.github.io/resume/projects/U25/ex1.html)
 ### 2.有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容。
 
+```
 <ul class="ct">
     <li>这里是</li>
     <li>饥人谷</li>
@@ -19,7 +22,14 @@
 <script>
 //todo ...
 </script>
+```
+
+[点击查看](https://comicparty.github.io/resume/projects/U25/ex2.html)
+
 ### 3.实现，点击换色 效果
+
+[点击查看](https://comicparty.github.io/resume/projects/U25/ex3.html)
+
 ### 4.如何获取 DOM 计算后的样式？
 
 `Window.getComputedStyle()`方法返回一个对象，该对象在应用活动样式表并解析这些值可能包含的任何基本计算后报告元素的所有CSS属性的值。 私有的CSS属性值可以通过对象提供的API或通过简单地使用CSS属性名称进行索引来访问。
@@ -71,8 +81,9 @@ querySelectorAll()
 ```
 
 ### 7.如何创建元素？如何添加元素？
-可以使用 `createElement()`、`createTextNode()`和`createDocumentFragment()`创建元素。
-修改元素
+创建元素： `createElement()`、`createTextNode()`和`createDocumentFragment()`
+
+修改/添加 元素：
 ```
 appendChild()//在元素末尾添加元素
 insertBefore()//在某个元素之前插入元素
