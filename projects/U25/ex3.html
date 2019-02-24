@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击换色效果</title>
+    <style>
+        div{
+            border: solid 1px ;
+            padding:10px;
+            margin:10px;
+        }
+        .blackGround{
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>hello</h1>
+        <p>jirengu</p>
+    </div>
+    <button class="button">add</button>
+    <button class="button">remove</button>
+    <button class="button">toggle1</button>
+    <button class="button">toggle2</button>
+    <script>
+        var buttonList = document.getElementsByClassName('button');
+        var div = document.getElementsByTagName('div')[0];
+        
+        buttonList[0].addEventListener('click',function(event){
+            div.setAttribute('class','blackGround');
+        })
+
+        buttonList[1].addEventListener('click',function(event){
+            div.setAttribute('class','');
+        })
+        buttonList[2].addEventListener('click',function(event){
+            var a =div.className;
+            if(!a){
+                div.setAttribute('class','blackGround');
+            }else{
+                div.setAttribute('class','');
+            }
+        })
+        buttonList[3].addEventListener('click',function(event){
+           var a =div.className;
+            if(!a){
+                div.setAttribute('class','blackGround');
+            }else{
+                div.setAttribute('class','');
+            }
+        })
+    </script>
+</body>
+</html>

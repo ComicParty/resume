@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片</title>
+</head>
+
+<body>
+    <ul class="ct">
+        <li data-img="1.png">鼠标放置查看图片1</li>
+        <li data-img="2.png">鼠标放置查看图片2</li>
+        <li data-img="3.png">鼠标放置查看图片3</li>
+    </ul>
+    <div class="img-preview"></div>
+    <script>
+    // var liEl = document.querySelectorAll('.ct li');
+
+    // liEl.forEach(function(currentValue, index, array, thisArg) {
+    //     console.log(index);
+    //     currentValue.addEventListener("mouseover", function() {
+    //         // var divImg = document.querySelector('img-preview'); // null
+    //         //querySelector 是根据 CSS选择的，他的里面 id 、class需要有 符号.#
+    //         var div = document.getElementsByClassName('img-preview');
+    //         console.log(div);
+
+    //         var divImgEl = document.createElement('img');
+    //         var srcAdd = './img/' + index + '.jpg';
+    //         // divImgEl.style.src = srcAdd;
+    //         //var a = divImgEl.createAttribute('src');
+    //         //a.value = srcAdd;
+    //         divImgEl.setAttribute("src",srcAdd);
+
+    //         var divFistChild = document.querySelector('div img');
+    //         console.log('111111');
+    //         console.log(divFistChild);
+    //          console.log('11133333');
+
+    //         if(divFistChild){
+    //             div.removeChild(divFistChild)
+    //         }
+    //         div[0].appendChild(divImgEl);
+    //     })
+    // });
+
+    // 思路。创建IMG元素，当 鼠标放置 时，修改src属性。
+    var div = document.querySelector('.img-preview');
+    var img = document.createElement('img');
+    div.appendChild(img);
+
+
+    //事件监听，触发时，修改img属性
+    var liEl = document.querySelectorAll('.ct li');
+    liEl.forEach(function(currentValue, index, array, thisArg) {
+            var srcAdd = './img/'+index+'.jpg';
+        currentValue.addEventListener("mouseover", function() {
+            img.setAttribute('src',srcAdd);
+        });
+    });
+    </script>
+</body>
+
+</html>
