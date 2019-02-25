@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写一个 Demo，演示事件传播的过程，演示阻止传播的效果。</title>
+</head>
+<body>
+    <div class="box1">
+        <ul class="box2">
+            <button class="btn">点我</button>
+        </ul>
+    </div>
+    <script>
+        console.log('当点击按钮后，控制台会根据 冒泡 与捕获 显示传播过程。')
+        //选择
+        function $(selector){
+            return document.querySelector(selector);
+        }
+        //事件处理方法
+        function consoleBubbling(e){
+             console.log('target click.. in 冒泡阶段'+ e.currentTarget);
+             e.stopPropagation();//当把注释去掉后，事件传播将停止，冒泡出现在捕获 后面，所以，捕获不爱影响
+        }
+        function consoleCatch(e){
+             console.log('target click.. in 捕获阶段'+ e.currentTarget);
+             // e.stopPropagation();//当把注释去掉后，事件传播将停止，
+             //冒泡也不会出现
+        }
+
+        $('.box1').addEventListener('click',consoleCatch,true);
+
+        $('.box2').addEventListener('click',consoleCatch,true);
+        $('.btn').addEventListener('click',consoleCatch,true);
+        $('.btn').addEventListener('click',consoleBubbling,false);
+        $('.box2').addEventListener('click',consoleBubbling,false);
+        $('.box1').addEventListener('click',consoleBubbling,false);
+    </script>
+</body>
+</html>

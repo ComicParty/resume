@@ -10,7 +10,7 @@
 <script>
 //你的代码
 </script>
-
+都是还没有教到《鼠标事件》，我想知道 “鼠标放置在li元素上” 应该如何检测？
 [点击查看](https://comicparty.github.io/resume/projects/U25/ex1.html)
 ### 2.有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容。
 
@@ -61,6 +61,21 @@ function css(node, styleObj){
        node[valueKey]=styleObj[valueKey]
     }
     
+  }
+}
+css(document.body, {
+  'color': 'red',
+  'background-color': '#ccc'
+})
+```
+
+
+上面的代码只能处理 `color`和`background-color`两个属性，如果有多个其它属性？需要下面的改写：
+思路：通过 `元素.style.具体样式`修改。
+```
+function css(node, styleObj){
+  for(var valueKey in styleObj){
+    node.style[valueKey] = styleObj[valueKey];
   }
 }
 css(document.body, {
