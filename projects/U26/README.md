@@ -28,7 +28,7 @@ DOM2级事件定义了两个方法用于处理指定和删除事件处理程序�
 3. 布尔参数，如果是true表示在捕获阶段调用事件处理程序，如果是false，则是在事件冒泡阶段处理
 
 ### 4. 补全代码，要求：
-当点击按钮开头添加时在<li>这里是</li>元素前添加一个新元素，内容为用户输入的非空字符串；当点击结尾添加时在最后一个 li 元素后添加用户输入的非空字符串.
+当点击按钮开头添加时在%3Cli%3E这里是%3C/li%3E元素前添加一个新元素，内容为用户输入的非空字符串；当点击结尾添加时在最后一个 li 元素后添加用户输入的非空字符串.
 当点击每一个元素li时控制台展示该元素的文本内容。
 
 ```
@@ -47,8 +47,8 @@ DOM2级事件定义了两个方法用于处理指定和删除事件处理程序�
 
 [点击查看](https://comicparty.github.io/resume/projects/U26/ex2.html)
 ### 5.onlick与addEventListener的区别？
-区别一：目标元素只能有触发一个onlick事件，而addEventListener却可以有多个
-区别二：onclick是DOM0级，addEventListener是DOM2级。
-区别三：onclick不能用事件代理，addEventListener可以使用。
+1. 区别一：目标元素只能有触发一个onlick事件，而addEventListener却可以有多个
+2. 区别二：onclick是DOM0级，addEventListener是DOM2级。
+3. 区别三：onclick不能用事件代理，addEventListener可以使用。
 
 
