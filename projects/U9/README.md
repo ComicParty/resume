@@ -47,12 +47,14 @@ clear:right;
 ```
 3. 给父元素新建一个 BFC(块格式化上下文)
 
-```<div class="container">
+```
+<div class="container">
     <div class="box"></div>
 </div
 ```
 
-```.container {
+```
+.container {
     overflow: hidden;
 }
 .box {

@@ -1,0 +1,126 @@
+header {
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    text-align: right;
+}
+
+.login {
+    /*font-size: 30px;*/
+    margin: 20px;
+}
+
+main {
+    background: linear-gradient(to right top, rgba(38, 50, 105, 0.78), rgba(255, 152, 0, 0.45)), url(http://book.jirengu.com/fe/code/projects/HungoouRadio/imgs/bg.jpg) center center/cover no-repeat;
+}
+/*rotate-container log-sign-model*/
+/*登录&注册 模块 不显示*/
+.log-sign-model {
+    display: block;
+}
+.common-model {
+    background-color: white;
+    width: 400px;
+    padding: 15px;
+    /*backface-visibility: hidden;*/
+    /*transform: all 2s;*/
+
+    /*定位*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*card-rotateY 翻转*/
+.card-rotateY {
+    /*transform: rotateY(180deg);*/ /*原来这里写了个transform与后面的冲突，位置发生变化！需要合在一起 */
+    /*翻转定位*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.tabs {
+    text-align: center;
+}
+
+.tabs a {
+    /*margin-top: 15px;*/
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.active {
+    border-bottom: solid 2px;
+}
+
+.tabs>i {}
+
+/*关闭按钮*/
+.close {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.display-block {
+    display: block;
+}
+
+/*输入框的样式 */
+.input-style {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 28px;
+}
+
+/*submit样式*/
+.submit-sytle {
+    margin-top: 10px;
+    padding: 6px 10px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.form-container {
+    position: relative;
+}
+
+/*form 定位，好保证下面的图标定位*/
+/*form{
+        position: absolute;
+    }*/
+/*.clearfix::after{
+        display: block;
+        content: '';
+        clear: both;
+    }*/
+/*input字体图标定位*/
+form .fas.fa-user-secret {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+form .fa.fa-lock {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+/*错误信息*/
+.erro-message {
+    color: #ff9800;
+    font-size: 12px;
+}
+
+.content {
+    padding: 20px 40px;
+}

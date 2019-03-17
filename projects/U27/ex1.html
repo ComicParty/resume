@@ -1,10 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>实现登录注册页面</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        header{
+        position: absolute;
+        width: 100%;
+        padding: 10px 0;
+        text-align: right;
+    }
+    .login{
+        /*font-size: 30px;*/
+        margin: 20px;
+    }
+    main {
+        background: linear-gradient(to right top, rgba(38, 50, 105, 0.78), rgba(255, 152, 0, 0.45)), url(http://book.jirengu.com/fe/code/projects/HungoouRadio/imgs/bg.jpg) center center/cover no-repeat;
+    }
+    /*登录&注册 模块 不显示*/
+    .log-sign-model{
+        display: block/*none*/;
+        /*perspective: 600px;*/
+    }
+    .common-model{
+        background-color: white;
+        width: 400px;
+        padding: 15px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .tabs{
+        text-align: center;
+    }
+    .tabs a{
+        /*margin-top: 15px;*/
+        margin-right: 15px;
+        display: inline-block;
+    }
+    .active{
+        border-bottom: solid 2px; 
+    }
+    .tabs > i{
+    }
+    /*关闭按钮*/
+    .close{
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .display-block{
+        display: block;
+    }
+    /*输入框的样式 */
+    .input-style{
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        padding: 10px 10px 10px 28px;
+    }
+    /*submit样式*/
+    .submit-sytle{
+        margin-top: 10px;
+        padding: 6px 10px;
+        border:none;
+        box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+    }
+    .form-container{
+        position: relative;
+    }
+    /*form 定位，好保证下面的图标定位*/
+    /*form{
+        position: absolute;
+    }*/
+    /*.clearfix::after{
+        display: block;
+        content: '';
+        clear: both;
+    }*/
+    /*input字体图标定位*/
+    form .fas.fa-user-secret{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    form .fa.fa-lock{
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+    /*错误信息*/
+    .erro-message{
+        color: #ff9800;
+        font-size: 12px;
+    }
+    .content{
+            padding: 20px 40px;
+    }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <a class="login" href="#">
+            <i class="fas fa-user"></i>
+        </a>
+    </header>
+    <main>
+        <div class="log-sign-model">
+            <div class="common-model sign-in">
+                <div class="tabs">
+                    <a class="singin active" href="#">登录</a>
+                    <a class="singup" href="#">注册</a>
+                    <i class="close fas fa-window-close"></i>
+                </div>
+                <div class="content">
+                    <div class="login erro-message">
+                        <!-- <p>323</p> -->
+                    </div>
+                    <div class="form-container">
+                        <form class="clearfix" action="/register" method="post">
+                        <i class="fas fa-user-secret"></i>
+                        <input class="input-style login-username"  type="text" placeholder="点击输入用户名">
+                        <i class="fa fa-lock"></i>
+                        <input class="input-style login-password" type="password" placeholder="点击输入密码">
+                        <input id="submitLogin" class="submit-sytle" type="submit" value="登录">
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-up">
+                <div class="model model-login">
+                    <div class="tabs">
+                        <a href="#">登录</a>
+                        <a href="#">注册</a>
+                    </div>
+                </div>
+                <div class="erro-message">
+                用户名需输入3-8个字符，包括字母数字下划线
+                密码需输入6-10个字符，包括字母数字下划线
+                两次输入的密码不一致
+                </div>
+                <div class="content">
+                    <form action="/register" method="post">
+                        <input type="text" placeholder="请输入用户名">
+                        <input type="password" placeholder="请输入密码">
+                        <input type="password" placeholder="请重复输入密码">
+                        <input type="submit" value="注册">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+    //$ 方式选择元素
+    var $ = function(selector) {
+        return document.querySelector(selector);
+    }
+    // 获取log-sign-model
+    var logSignModel = $('.log-sign-model');
+    //获取 右上角 
+    var headerLogin = $('.login');
+    // console.log(headerLogin);
+    // 点击右上角，会显示 登录&注册模块
+    function removeDisplayNone() {
+        console.log(logSignModel.style.display);
+        // if(logSignModel.style.display === ''){
+        //     logSignModel.style.display = "block";
+        // }//通过 logSignModel.style.display 的方式只能 获得空样式
+        // 我学到了什么？出现问题，要通过控制台调试？
+        // 一种种的方法进行调试？
+        if (window.getComputedStyle(logSignModel).display === 'none') {
+            logSignModel.style.display = "block";
+        }
+    }
+    headerLogin.addEventListener('click', removeDisplayNone);
+    // 获取 关闭按钮
+    var logSignModelClose = $('.fa-window-close');
+    // 关闭log-sign-modal页面事件
+    function closeModel() {
+        if (window.getComputedStyle(logSignModel).display === 'block') {
+            logSignModel.style.display = "none";
+        }
+    }
+    // 为关闭按钮 添加 关闭事件
+    logSignModelClose.addEventListener('click', closeModel)
+    // 用户名需输入3-8个字符，包括字母数字下划线
+                        // 密码错误
+//登录简查，如果错误就阻止 默认事件
+    function formChecking(e){
+        e.preventDefault();
+
+        if(!/^\w{3,8}$/.test($('.login-username').value)){
+            $('.login.erro-message').innerText = '用户名不合法';
+            return false;
+        }
+        if(!/^\w{6,10}$/.test($('.login-password').value)){
+        $('.login.erro-message').innerText = '密码错误'
+        return false
+      }
+
+    }
+        console.log($('.login-username').value,3);
+    var submitLogin = $('#submitLogin');
+    console.log(submitLogin);
+    submitLogin.addEventListener('click',formChecking);
+    // 登录、注册 分页 切换
+    var signinBtn = $('')
+    var signupBtn = $('')
+    </script>
 </body>
+
 </html>
