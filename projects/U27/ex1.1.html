@@ -16,7 +16,7 @@
         </a>
     </header>
     <main>
-        <div class="log-sign-model ">
+        <div class="log-sign-model">
                 <div class="common-model sign-in">
                     <div class="tabs">
                         <a class="singin active" href="#">登录</a>
@@ -25,14 +25,13 @@
                     </div>
                     <div class="content">
                         <div class="login erro-message">
-                            <!-- <p>323</p> -->
                         </div>
                         <div class="form-container">
                             <form class="clearfix" action="/register" method="post">
                             <i class="fas fa-user-secret"></i>
-                            <input class="input-style login-username"  type="text" placeholder="点击输入用户名">
+                            <input class="input-style login-username" name="inUsername"  type="text" placeholder="点击输入用户名">
                             <i class="fa fa-lock"></i>
-                            <input class="input-style login-password" type="password" placeholder="点击输入密码">
+                            <input class="input-style login-password" name="inPassword" type="password" placeholder="点击输入密码">
                             <input id="submitLogin" class="submit-sytle" type="submit" value="登录">
                         </form>
                         </div>
@@ -43,20 +42,23 @@
                         <div class="tabs">
                             <a class="singin" href="#">登录</a>
                             <a class="singup active" href="#">注册</a>
+                            <i class="close fas fa-window-close"></i>
                         </div>
                     </div>
-                    <div class="erro-message">
-                    用户名需输入3-8个字符，包括字母数字下划线
-                    密码需输入6-10个字符，包括字母数字下划线
-                    两次输入的密码不一致
-                    </div>
                     <div class="content">
-                        <form action="/register" method="post">
-                            <input type="text" placeholder="请输入用户名">
-                            <input type="password" placeholder="请输入密码">
-                            <input type="password" placeholder="请重复输入密码">
-                            <input type="submit" value="注册">
-                        </form>
+                        <div class="signUp erro-message">
+                        </div>
+                        <div class="form-container">
+                            <form class="clearfix" action="/register" method="post">
+                                <i class="fas fa-user-secret signup"></i>
+                                <input class="input-style login-username" name="upUsername" type="text" placeholder="请输入用户名">
+                                <i class="fa fa-lock signup"></i>
+                                <input class="input-style login-password" type="password" name="upPassword" placeholder="请输入密码">
+                                <i class="fa fa-lock signup-repetition"></i>
+                                <input class="input-style login-password repetition" type="password" name="upPasswordRepetition" placeholder="请重复输入密码">
+                                <input id="submitSignUp" class="submit-sytle" type="submit" value="注册">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,7 +75,8 @@
     // console.log(headerLogin);
     // 点击右上角，会显示 登录&注册模块
     function removeDisplayNone() {
-        console.log(logSignModel.style.display);
+        event.stopPropagation();
+        // console.log(logSignModel.style.display);
         // if(logSignModel.style.display === ''){
         //     logSignModel.style.display = "block";
         // }//通过 logSignModel.style.display 的方式只能 获得空样式
@@ -84,50 +87,82 @@
         }
     }
     headerLogin.addEventListener('click', removeDisplayNone);
+    
+    var body = $('body');
     // 获取 关闭按钮
     var logSignModelClose = $('.fa-window-close');
+    // 为关闭按钮 添加 关闭事件
+    body.addEventListener('click', closeModel)
     // 关闭log-sign-modal页面事件
-    function closeModel() {
-        if (window.getComputedStyle(logSignModel).display === 'block') {
+    function closeModel(event) {
+        if(event.target.classList.contains('fa-window-close')){
             logSignModel.style.display = "none";
         }
+        // if (window.getComputedStyle(logSignModel).display === 'block') {
+            logSignModel.style.display = "none";
+        // }
     }
-    // 为关闭按钮 添加 关闭事件
-    logSignModelClose.addEventListener('click', closeModel)
+
+
+
+
     // 用户名需输入3-8个字符，包括字母数字下划线
                         // 密码错误
-//登录简查，如果错误就阻止 默认事件
-    function formChecking(e){
-        e.preventDefault();
-
+// 登录检查，如果错误就阻止 默认事件
+    function formChecking(event){
+        event.stopPropagation();
+        event.preventDefault();
         if(!/^\w{3,8}$/.test($('.login-username').value)){
-            $('.login.erro-message').innerText = '用户名不合法';
+            $('.login.erro-message').innerText = '用户名需输入3-8个字符，包括字母数字下划线';
             return false;
         }
         if(!/^\w{6,10}$/.test($('.login-password').value)){
         $('.login.erro-message').innerText = '密码错误'
-        return false
+        return false;
       }
-
     }
-        console.log($('.login-username').value,3);
     var submitLogin = $('#submitLogin');
-    console.log(submitLogin);
     submitLogin.addEventListener('click',formChecking);
     // 登录、注册 分页 切换 使用事件代理的方式
     var signClick = function(event){
-        event.stopPropagation()
         // 注册卡片e.target.classList.contains('login')
         if (event.target.classList.contains('singup')) {
+        event.stopPropagation();
                 logSignModel.classList.add('rotate-card');
         }
         // 登录卡片
         if (event.target.classList.contains('singin')) {
+        event.stopPropagation();
                 logSignModel.classList.remove('rotate-card');
-
         }
+
+        if (!event.target.classList.contains('fa-window-close')) {
+        event.stopPropagation();
+        }
+
     }
     logSignModel.addEventListener('click',signClick,false);
+
+
+    // 注册检查，如果错误就阻止 默认事件
+    function formUpChecking(event){
+        event.stopPropagation();
+        event.preventDefault();
+      if(!/^\w{3,8}$/.test($('.log-sign-model input[name=upUsername]').value)){
+        $('.signUp.erro-message').innerText = '用户名需输入3-8个字符，包括字母数字下划线'
+        return false;
+      }
+      if(!/^\w{6,10}$/.test($('.log-sign-model input[name=upPassword]').value)){
+        $('.signUp.erro-message').innerText = '密码需输入6-10个字符，包括字母数字下划线'
+        return false;
+      }
+      if($('.log-sign-model input[name=upPassword]').value !== $('.log-sign-model input[name=upPasswordRepetition]').value){
+        $('.signUp.erro-message').innerText = '两次输入的密码不一致'
+        return false;
+      }
+    }
+    var submitSignUp = $('#submitSignUp');
+    submitSignUp.addEventListener('click',formUpChecking);
     </script>
 </body>
 

@@ -13,18 +13,19 @@ header {
 main {
     background: linear-gradient(to right top, rgba(38, 50, 105, 0.78), rgba(255, 152, 0, 0.45)), url(http://book.jirengu.com/fe/code/projects/HungoouRadio/imgs/bg.jpg) center center/cover no-repeat;
 }
+
 /*rotate-container log-sign-model*/
 /*登录&注册 模块 不显示*/
 .log-sign-model {
     display: block;
 }
+
 .common-model {
     background-color: white;
     width: 400px;
     padding: 15px;
     /*backface-visibility: hidden;*/
     /*transform: all 2s;*/
-
     /*定位*/
     position: absolute;
     top: 50%;
@@ -35,12 +36,14 @@ main {
 
 /*card-rotateY 翻转*/
 .card-rotateY {
-    /*transform: rotateY(180deg);*/ /*原来这里写了个transform与后面的冲突，位置发生变化！需要合在一起 */
+    /*transform: rotateY(180deg);*/
+    /*原来这里写了个transform与后面的冲突，位置发生变化！需要合在一起 */
     /*翻转定位*/
+    transition: all 1s;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotateY(180deg);
+    /*transform: translate(-50%, -50%) rotateY(180deg);*/
     backface-visibility: hidden;
 }
 
@@ -103,18 +106,33 @@ main {
         clear: both;
     }*/
 /*input字体图标定位*/
-form .fas.fa-user-secret {
+.fas.fa-user-secret {
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-form .fa.fa-lock {
+.fa.fa-lock {
     position: absolute;
     top: 60px;
     left: 10px;
 }
-
+/*signup 字体图标定位*/
+.fa-lock.signup-repetition{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+}
+.fa-lock.signup{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+.fa-user-secret.signup{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 /*错误信息*/
 .erro-message {
     color: #ff9800;
@@ -123,4 +141,17 @@ form .fa.fa-lock {
 
 .content {
     padding: 20px 40px;
+}
+
+/*点击触发翻转的 样式*/
+.log-sign-model .common-model.sign-in,
+.log-sign-model.rotate-card .common-model.card-rotateY {
+    transition: all 1s;
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+.log-sign-model .common-model.card-rotateY,
+.log-sign-model.rotate-card .common-model.sign-in {
+    transition: all 1s;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    backface-visibility: hidden;
 }

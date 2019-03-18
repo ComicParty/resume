@@ -26,7 +26,7 @@
     }
 
     .flip-modal{
-      display: none;
+      display: block;
     }
     .show{
       display: block!important;
@@ -93,19 +93,39 @@
       outline: none;
     }
 
-
+    /*登录 状态下的 登录*/
+    /*注册 状态下的 注册*/
     .flip-modal.login .modal-login,
     .flip-modal.register .modal-register {
       transform: translate(-50%,-50%) rotateY(0deg);
       backface-visibility: hidden;
       transition: all 1s;
     }
-    .flip-modal.login .modal-register,
+    /*.flip-modal.register 是注册*/
+    /*注册 状态下的 登录*/
+    /*登录 状态下的 注册*/
+    .flip-modal.register .modal-login,
+    .flip-modal.login .modal-register{
+      transform: translate(-50%,-50%) rotateY(180deg);
+      backface-visibility: hidden;
+      transition: all 1s;
+    }
+    /*.flip-modal.register .modal-login,.flip-modal.login .modal-register{
+      transform: translate(-50%,-50%) rotateY(180deg);
+      backface-visibility: hidden;
+      transition: all 1s;
+    }*/
+    /*
     .flip-modal.register .modal-login{
       transform: translate(-50%,-50%) rotateY(180deg);
       backface-visibility: hidden;
       transition: all 1s;
     }
+    .flip-modal.login .modal-register{
+      transform: translate(-50%,-50%) rotateY(180deg);
+      backface-visibility: hidden;
+      transition: all 1s;
+    }*/
 
 
   </style>
