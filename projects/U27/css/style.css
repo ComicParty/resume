@@ -17,7 +17,7 @@ main {
 /*rotate-container log-sign-model*/
 /*登录&注册 模块 不显示*/
 .log-sign-model {
-    display: block;
+    display: none;
 }
 
 .common-model {
@@ -117,22 +117,26 @@ main {
     top: 60px;
     left: 10px;
 }
+
 /*signup 字体图标定位*/
-.fa-lock.signup-repetition{
+.fa-lock.signup-repetition {
     position: absolute;
     top: 110px;
     left: 10px;
 }
-.fa-lock.signup{
+
+.fa-lock.signup {
     position: absolute;
     top: 60px;
     left: 10px;
 }
-.fa-user-secret.signup{
+
+.fa-user-secret.signup {
     position: absolute;
     top: 10px;
     left: 10px;
 }
+
 /*错误信息*/
 .erro-message {
     color: #ff9800;
@@ -149,6 +153,7 @@ main {
     transition: all 1s;
     transform: translate(-50%, -50%) rotateY(0deg);
 }
+
 .log-sign-model .common-model.card-rotateY,
 .log-sign-model.rotate-card .common-model.sign-in {
     transition: all 1s;

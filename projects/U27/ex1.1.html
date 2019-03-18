@@ -135,15 +135,13 @@
         event.stopPropagation();
                 logSignModel.classList.remove('rotate-card');
         }
-
-        if (!event.target.classList.contains('singin')) {
+        // 
+        if (!event.target.classList.contains('fa-window-close')) {
         event.stopPropagation();
         }
 
     }
     logSignModel.addEventListener('click',signClick,false);
-
-
     // 注册检查，如果错误就阻止 默认事件
     function formUpChecking(event){
         event.stopPropagation();
