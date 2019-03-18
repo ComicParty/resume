@@ -7,8 +7,21 @@
 适合用在 事件监听，判断目标元素上面！
 2. 想要获取目标元素的样式不能使用`el.style.display`，
 使用`window.getComputedStyle(logSignModel).display === 'none'`
-3.需要分两对样式，才能正常实现翻转效果！
+3. 需要分两对样式，才能正常实现翻转效果！
  /*登录 状态下的 登录*/&/*注册 状态下的 注册*/
 /*注册 状态下的 登录*/&/*登录 状态下的 注册*/
+4. [翻转，可以看看](https://codepen.io/desandro/pen/LmWoWe) 
+
+```
+<!--跟父元素定位-->
+<div>
+    <pre>front</pre>
+    <pre>back</pre>
+</div>
+
+<!--水平两个居中定位-->
+<pre>front</pre>
+<pre>back</pre>
+```
 
 
